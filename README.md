@@ -23,6 +23,19 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173)
 
+## Live site
+
+The latest version is published at [enopac-website.ben-03a.workers.dev](https://enopac-website.ben-03a.workers.dev).
+
+To publish updates with Cloudflare access:
+
+```bash
+npm ci
+npm run deploy:worker
+```
+
+The Worker serves the Vite build in `dist/` and supports direct links to all site routes.
+
 ## Brand theme (from logo)
 
 | Token | Hex | Usage |
@@ -36,4 +49,4 @@ Open [http://localhost:5173](http://localhost:5173)
 
 - [ ] Add official logo image to `public/logo.png`
 - [ ] Connect contact form to email backend
-- [ ] Deploy to Vercel / Netlify / Cloudflare Pages
+- [x] Deploy to Cloudflare Workers
