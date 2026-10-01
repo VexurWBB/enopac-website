@@ -7,7 +7,6 @@ const navLinks = [
   { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
-  { to: '/process', label: 'Process' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -25,7 +24,6 @@ export default function Header() {
 
   useEffect(() => {
     if (!overHero) {
-      setScrolled(false)
       return
     }
 

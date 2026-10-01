@@ -2,8 +2,6 @@ import FooterSocials from './FooterSocials'
 import BookingButton from './BookingButton'
 import { site } from '../../data/site'
 
-const firstName = site.contact.split(' ')[0]
-
 const contactItems = [
   {
     label: 'Phone',
@@ -55,10 +53,10 @@ export default function ContactInfoPanel() {
       <header className="contact-info-head">
         <p className="contact-info-eyebrow">Direct Contact</p>
         <h2 className="contact-info-title">
-          Or reach {firstName} <em>directly.</em>
+          Or reach our team <em>directly.</em>
         </h2>
         <p className="contact-info-lead">
-          No call centres, no hand-offs — just a direct line to someone who invests what they advise.
+          No call centres, no hand-offs — just a direct line to our team.
         </p>
       </header>
 
@@ -86,7 +84,7 @@ export default function ContactInfoPanel() {
             <span>{site.cta}</span>
           </BookingButton>
           <p className="contact-info-callout-note">
-            Licence {site.licence} · {site.state} · {site.contact}
+            WA Licence {site.licence} · Our team
           </p>
         </div>
 

@@ -16,11 +16,13 @@ export const services: Service[] = [
     abbr: 'PM',
     title: 'Property Management',
     shortDescription:
-      'Protect and grow your rental returns with end-to-end management.',
+      'Specialist co-living rentals, leasing and end-to-end property management.',
     description:
-      'Our property management service is built for investors who want their assets performing at their best — without the day-to-day burden. From tenant placement to maintenance and reporting, we handle everything with the same care we apply to our own portfolio.',
+      'Our property management service is built for investors who want their assets performing at their best without the day-to-day burden. We specialise in co-living rentals and handle leasing, sourcing new tenants, maintenance and reporting with the same care we apply to our own portfolio.',
     fee: 'Percentage-based fee',
     features: [
+      'Co-living rental management',
+      'Leasing and sourcing new tenants',
       'Comprehensive tenant screening',
       'Lease preparation and renewals',
       'Rent collection and arrears management',
@@ -37,7 +39,7 @@ export const services: Service[] = [
     ],
     process: [
       { step: 'Onboarding', detail: 'We review your property, set rental benchmarks, and establish your preferences.' },
-      { step: 'Tenant placement', detail: 'Rigorous screening finds quality tenants aligned with your investment goals.' },
+      { step: 'Leasing and tenant placement', detail: 'We source and screen new tenants, including for co-living rentals.' },
       { step: 'Ongoing management', detail: 'Inspections, maintenance, and rent collection handled seamlessly.' },
       { step: 'Reporting', detail: 'Regular updates and financial summaries keep you fully informed.' },
     ],
@@ -49,7 +51,7 @@ export const services: Service[] = [
     shortDescription:
       'Exclusive representation to find, assess, and secure the right investment property.',
     description:
-      'As your buyers agent, we work solely for you — not the seller. Leveraging our eight-figure portfolio experience and deep market knowledge across WA and VIC, we identify opportunities others miss and negotiate outcomes that protect your capital.',
+      'As your buyers agent, we work solely for you — not the seller. Drawing on our directors\' eight-figure personal portfolio experience and market knowledge across WA and VIC, we identify opportunities others miss and negotiate outcomes that protect your capital.',
     fee: 'Fixed fee structure',
     features: [
       'Investment strategy alignment',

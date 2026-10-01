@@ -16,9 +16,10 @@ const whyFeatures = [
     number: '01',
     title: '8-Figure Portfolio Experience',
     summary: 'Deep expertise across property purchasing, management, and development — backed by real portfolio results.',
-    details: 'Our team holds a multi-million-dollar, eight-figure personal portfolio. Every recommendation is grounded in real-world experience.',
+    details: 'Our directors have an eight-figure personal property portfolio. Their first-hand experience with complex trust structures helps them understand how a purchase fits a broader investment plan.',
     bullets: [
-      'Over five years of active hands-on investing across WA and VIC',
+      'Over seven years of active hands-on investing across WA and VIC',
+      'First-hand experience with complex trust structures in their own portfolio',
       'Understands what makes a property perform — and what hidden issues can derail returns',
       'Skilled in reading contracts, comparable sales, and market cycles',
       'Guidance grounded in real transactions, not theory',
@@ -39,13 +40,25 @@ const whyFeatures = [
   {
     number: '03',
     title: 'Holistic Approach',
-    summary: 'Long-term thinking. We consider your full investment picture — not just this one transaction.',
-    details: 'We help you think through how each move fits your broader wealth-building goals.',
+    summary: 'One point of contact for full turnkey investment support, shaped around your goals and timeline.',
+    details: 'We connect acquisition, management and development services, and can introduce you to trusted professional partners for accounting, lending and settlement. We work to your timeline, with no sales quotas or fulfilment targets driving the decision.',
     bullets: [
       'Considers borrowing capacity and future plans',
       'Factors in rental yield, capital growth, and development potential',
-      'Strategy suited to each client\'s timeline',
+      'Trusted referrals for accounting, lending and settlement',
+      'The right decision at your pace, never a rushed transaction',
       'Clear, consistent communication throughout',
+    ],
+  },
+  {
+    number: '04',
+    title: 'Boutique and Client-Focused',
+    summary: 'Personal attention from a small team that takes time to understand your goals.',
+    details: 'We keep the relationship personal and tailor our work to your position, priorities and pace.',
+    bullets: [
+      'Direct access to our team',
+      'Advice tailored to your investment brief',
+      'A long-term relationship beyond a single transaction',
     ],
   },
 ]
@@ -59,12 +72,11 @@ export default function AboutPage() {
         description="Independent property services built on deep investing expertise — exclusively on your side of every transaction."
         image={heroImages.about.src}
         imageAlt={heroImages.about.alt}
-        imageCaption={`${site.contact} · Property & Investment Expert`}
-        pills={['5+ Years Experience', '100% Investor-Side', 'WA & VIC']}
+        pills={['7+ Years Experience', 'Boutique & Client-Focused', 'WA & VIC']}
         actions={
           <>
             <BookingButton />
-            <Button to="/contact" variant="outline">Meet {site.contact.split(' ')[0]}</Button>
+            <Button to="/contact" variant="outline">Meet our team</Button>
           </>
         }
       />
@@ -74,12 +86,11 @@ export default function AboutPage() {
           <Reveal>
             <EditorialSplit
               reverse
-              eyebrow={`Meet ${site.contact}`}
-              badge={`Licence ${site.licence}`}
+              eyebrow="Meet our team"
+              badge={`WA Licence ${site.licence}`}
               title="A property partner who thinks beyond the purchase."
-              subtitle="With over five years across property investing and an eight-figure personal portfolio, Matthew helps you secure the right property at the right price, with the right structure behind it."
+              subtitle="Our directors have an eight-figure personal portfolio and over seven years of active investing. Their experience with complex trust structures in their own portfolio helps us consider the right property and structure for your goals."
               image={sectionImages.portfolio}
-              imageCaption={`${site.contact} · Property & Investment Expert`}
             >
               <CheckList items={['Off-market access', 'Portfolio strategy guidance', 'Expert negotiation', 'WA & VIC coverage']} />
               <div className="hero-actions">
@@ -109,7 +120,7 @@ export default function AboutPage() {
             <SectionHeader
               eyebrow="Service Areas"
               title={<>WA &amp; VIC — <span className="text-gold">two markets, one approach</span></>}
-              subtitle="We represent investors across Perth, Melbourne, and regional centres in both states."
+              subtitle="We support investors across Western Australia and Victoria."
               centered
             />
           </Reveal>

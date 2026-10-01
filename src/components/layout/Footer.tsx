@@ -8,7 +8,6 @@ const quickLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
-  { to: '/process', label: 'Process' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -74,7 +73,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="footer-contact-name">{site.contact}</li>
-              <li className="footer-contact-detail">Licence {site.licence} · {site.state}</li>
+              <li className="footer-contact-detail">WA Licence {site.licence}</li>
             </ul>
           </div>
         </div>
@@ -82,7 +81,7 @@ export default function Footer() {
         <div className="footer-trust">
           <span className="footer-trust-pill">Western Australia</span>
           <span className="footer-trust-pill">Victoria</span>
-          <span className="footer-trust-pill">Licence {site.licence}</span>
+          <span className="footer-trust-pill">WA Licence {site.licence}</span>
         </div>
 
         <div className="footer-bottom">

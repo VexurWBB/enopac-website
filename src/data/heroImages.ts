@@ -7,7 +7,7 @@ export const heroImages = {
   },
   about: {
     src: '/images/hero-about.jpg',
-    alt: 'Contemporary luxury home at golden hour — Enopac Property Group',
+    alt: 'Yellow residential house exterior',
   },
   services: {
     src: '/images/hero-services.jpg',
@@ -19,7 +19,7 @@ export const heroImages = {
   },
   contact: {
     src: '/images/hero-contact.jpg',
-    alt: 'Modern commercial building — Enopac office locations',
+    alt: 'Modern commercial building exterior',
   },
   'property-management': {
     src: '/images/hero-property-management.jpg',
@@ -27,7 +27,7 @@ export const heroImages = {
   },
   'buyers-agency': {
     src: '/images/hero-buyers-agency.jpg',
-    alt: 'Stylish family home available for investors',
+    alt: 'Residential property exterior',
   },
   development: {
     src: '/images/hero-development.jpg',
@@ -46,7 +46,7 @@ export const sectionImages = {
   },
   portfolio: {
     src: '/images/section-portfolio.jpg',
-    alt: 'Matthew Capone — Property and investment expert',
+    alt: 'Historic brick building exterior',
   },
 } as const
 

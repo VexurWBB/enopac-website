@@ -15,7 +15,7 @@ const stats: Stat[] = [
     icon: 'portfolio',
   },
   {
-    value: '5+',
+    value: '7+',
     label: 'Years active investing',
     icon: 'experience',
   },

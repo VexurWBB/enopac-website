@@ -48,7 +48,7 @@ export default function CTASection({
           </div>
 
           <p className="cta-finale-trust">
-            Free consultation · WA &amp; VIC · Licence {site.licence} · {site.contact}
+            Free consultation · WA &amp; VIC · WA Licence {site.licence} · Our team
           </p>
         </div>
       </div>

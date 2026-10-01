@@ -3,7 +3,6 @@ type Region = {
   name: string
   tagline: string
   highlight: string
-  markets: string[]
   image: string
 }
 
@@ -11,17 +10,15 @@ const regions: Region[] = [
   {
     code: 'WA',
     name: 'Western Australia',
-    tagline: 'Perth metro & regional growth corridors',
+    tagline: 'Support across Western Australia',
     highlight: 'Strong rental demand across metro and coastal markets',
-    markets: ['Perth Metro', 'Fremantle', 'Mandurah', 'Regional WA'],
     image: '/images/region-wa.jpg',
   },
   {
     code: 'VIC',
     name: 'Victoria',
-    tagline: 'Melbourne metro & regional centres',
+    tagline: 'Support across Victoria',
     highlight: 'Diverse stock from inner-city to regional yield plays',
-    markets: ['Melbourne Metro', 'Geelong', 'Ballarat', 'Regional VIC'],
     image: '/images/region-vic.jpg',
   },
 ]
@@ -53,14 +50,6 @@ export default function RegionPanels() {
 
           <div className="region-panel-body">
             <p className="region-panel-highlight">{region.highlight}</p>
-            <div className="region-panel-markets">
-              <p className="region-panel-markets-label">Major markets</p>
-              <ul>
-                {region.markets.map((market) => (
-                  <li key={market}>{market}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </article>
       ))}
