@@ -1,0 +1,11 @@
+.rentals-section { scroll-margin-top: 6rem; }
+.rentals-region { margin-top: 3.5rem; }
+.rental-card { display: block; height: 100%; overflow: hidden; padding: 0; text-decoration: none; }
+.rental-card-content { padding: 1.5rem; }
+.rental-photo { position: relative; display: grid; place-content: center; aspect-ratio: 3 / 2; overflow: hidden; background: var(--surface-deep); border-bottom: 1px solid var(--line-gold); }
+.rental-photo .eyebrow { position: relative; margin: 0; }
+.rental-photo-code { position: absolute; inset: 0; display: grid; place-content: center; font-family: var(--font-family-heading); font-size: 7rem; font-weight: 700; color: var(--line-gold-soft); }
+.rental-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.rental-photo--detail { border: 1px solid var(--line-gold); border-radius: 1rem; }
+.rental-application { align-self: start; }
+.rental-card:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 4px; }

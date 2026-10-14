@@ -1,5 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom'
 import BookingButton from '../components/ui/BookingButton'
+import Button from '../components/ui/Button'
 import PageHero from '../components/ui/PageHero'
 import CTASection from '../components/ui/CTASection'
 import CheckList from '../components/ui/CheckList'
@@ -30,7 +31,7 @@ export default function ServiceDetailPage() {
         image={hero.src}
         imageAlt={hero.alt}
         imageCaption={service.fee}
-        actions={<BookingButton />}
+        actions={<><BookingButton />{service.slug === 'property-management' && <Button to="/rooms-for-rent" variant="outline">View rooms for rent</Button>}</>}
       />
 
       <section className="section-padding section-surface bg-dark">

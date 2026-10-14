@@ -5,6 +5,8 @@ import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import ContactPage from './pages/ContactPage'
+import RentalsPage from './pages/RentalsPage'
+import RentalDetailPage from './pages/RentalDetailPage'
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="services/:slug" element={<ServiceDetailPage />} />
         <Route path="process" element={<Navigate to="/services" replace />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="rooms-for-rent" element={<RentalsPage />} />
+        <Route path="rooms-for-rent/:slug" element={<RentalDetailPage />} />
       </Route>
     </Routes>
   )
