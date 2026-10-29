@@ -1,8 +1,36 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Button from '../components/ui/Button'
-import { listedRentals, getApplicationUrl } from '../data/rentals'
+import { listedRentals, getApplicationUrl, type RentalPhoto } from '../data/rentals'
 import { site } from '../data/site'
 import './rentals.css'
+
+function RentalGallery({ photos }: { photos: RentalPhoto[] }) {
+  const [index, setIndex] = useState(0)
+  const current = photos[index]
+  const step = (delta: number) => setIndex((index + delta + photos.length) % photos.length)
+
+  return (
+    <div className="rental-gallery mt-10">
+      <div className="rental-photo rental-photo--detail">
+        <img src={current.src} alt={current.alt} />
+        {photos.length > 1 && <>
+          <button type="button" className="rental-gallery-nav rental-gallery-nav--prev" onClick={() => step(-1)} aria-label="Previous photo">&lsaquo;</button>
+          <button type="button" className="rental-gallery-nav rental-gallery-nav--next" onClick={() => step(1)} aria-label="Next photo">&rsaquo;</button>
+          <span className="rental-photo-count">{index + 1} / {photos.length}</span>
+        </>}
+      </div>
+      <p className="rental-gallery-caption">{current.alt}</p>
+      {photos.length > 1 && <div className="rental-gallery-thumbs">
+        {photos.map((photo, i) => (
+          <button type="button" key={photo.src} className="rental-gallery-thumb" aria-current={i === index} aria-label={`Show ${photo.alt}`} onClick={() => setIndex(i)}>
+            <img src={photo.src} alt="" loading="lazy" />
+          </button>
+        ))}
+      </div>}
+    </div>
+  )
+}
 
 export default function RentalDetailPage() {
   const { slug } = useParams()
@@ -19,9 +47,9 @@ export default function RentalDetailPage() {
             <p className="eyebrow">{property.suburb} · {property.state}</p>
             <h1 className="hero-title mt-4">{property.street}</h1>
             <p className="section-subtitle">{property.street}, {property.suburb}, {property.state}</p>
-            <div className="rental-photo rental-photo--detail mt-10">
-              {property.photo ? <img src={property.photo.src} alt={property.photo.alt} /> : <><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
-            </div>
+            {property.photos?.length ? <RentalGallery key={property.slug} photos={property.photos} /> : <div className="rental-photo rental-photo--detail mt-10">
+              <span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span>
+            </div>}
           </div>
           <div className="card rental-application">
             <p className="eyebrow">Enopac Property Management</p>

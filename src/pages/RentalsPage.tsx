@@ -22,7 +22,7 @@ export default function RentalsPage() {
       />
       <section id="properties" className="section-padding section-surface bg-dark rentals-section">
         <div className="section-container">
-          <SectionHeader eyebrow="Rooms for Rent" title="Our rental locations" subtitle="Property photos and room details are coming soon. Select a location to find out how to apply." />
+          <SectionHeader eyebrow="Rooms for Rent" title="Our rental locations" subtitle="Select a property to view photos and find out how to apply." />
           {(['WA', 'VIC'] as const).map((state) => (
             <div className="rentals-region" key={state}>
               <h3 className="accordion-title">{state === 'WA' ? 'Western Australia' : 'Victoria'}</h3>
@@ -31,7 +31,7 @@ export default function RentalsPage() {
                   <Reveal key={property.slug}>
                     <Link className="card rental-card" to={`/rooms-for-rent/${property.slug}`} aria-label={`View ${property.street}, ${property.suburb}`}>
                       <div className="rental-photo">
-                        {property.photo ? <img src={property.photo.src} alt={property.photo.alt} loading="lazy" /> : <><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
+                        {property.photos?.length ? <><img src={property.photos[0].src} alt={property.photos[0].alt} loading="lazy" /><span className="rental-photo-count">{property.photos.length} photos</span></> :<><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
                       </div>
                       <div className="rental-card-content">
                         <p className="eyebrow">{property.suburb} · {property.state}</p>
