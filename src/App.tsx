@@ -7,6 +7,7 @@ import ServiceDetailPage from './pages/ServiceDetailPage'
 import ContactPage from './pages/ContactPage'
 import RentalsPage from './pages/RentalsPage'
 import RentalDetailPage from './pages/RentalDetailPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="rooms-for-rent" element={<RentalsPage />} />
         <Route path="rooms-for-rent/:slug" element={<RentalDetailPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   )

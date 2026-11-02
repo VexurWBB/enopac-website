@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:assets": "vite build",
+    "build": "tsc -b && npm run build:assets",
+    "build:assets": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "deploy:worker": "npm run build:assets && wrangler deploy",
     "preview:worker": "npm run build:assets && wrangler dev",
     "lint": "eslint .",

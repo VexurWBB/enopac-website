@@ -74,7 +74,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="footer-contact-name">{site.contact}</li>
-              <li className="footer-contact-detail">WA Licence {site.licence}</li>
+              <li className="footer-contact-detail">WA Licence {site.licence} · VIC Licence {site.licences[1].number}</li>
             </ul>
           </div>
         </div>
@@ -83,6 +83,7 @@ export default function Footer() {
           <span className="footer-trust-pill">Western Australia</span>
           <span className="footer-trust-pill">Victoria</span>
           <span className="footer-trust-pill">WA Licence {site.licence}</span>
+          <span className="footer-trust-pill">VIC Licence {site.licences[1].number}</span>
         </div>
 
         <div className="footer-bottom">

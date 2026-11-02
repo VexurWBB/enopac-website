@@ -1,17 +1,21 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { dismissAppSplash } from './lib/appSplash.ts'
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!
+const tree = (
   <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
+// Prerendered pages already hold their HTML; the dev server starts empty.
+if (container.hasChildNodes()) hydrateRoot(container, tree)
+else createRoot(container).render(tree)
 
 requestAnimationFrame(() => {
   requestAnimationFrame(dismissAppSplash)
