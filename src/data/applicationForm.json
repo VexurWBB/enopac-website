@@ -1,0 +1,841 @@
+{
+  "endpoint": "https://pgsnbsjtpxfmzedjldyu.supabase.co/functions/v1/headless-form-submit/hli_b7967f6fcf1b41adbc0ab927193bd0d7",
+  "fields": [
+    {
+      "id": "preferred_property",
+      "endpoint_key": "preferred_property",
+      "label": "Rental Property Address",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "occupants",
+      "endpoint_key": "occupants",
+      "label": "How many people will be renting the room?",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "1 Person",
+        "2 People"
+      ]
+    },
+    {
+      "id": "children_page",
+      "type": "page_break",
+      "label": "Children Residing at the Property",
+      "required": false
+    },
+    {
+      "id": "children_residing",
+      "endpoint_key": "children_residing",
+      "label": "Will any children be living at the property?",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "children_details_page",
+      "type": "page_break",
+      "label": "Children's Details",
+      "required": false
+    },
+    {
+      "id": "children_details",
+      "endpoint_key": "children_details",
+      "label": "Please provide the number of children and their ages.",
+      "type": "textarea",
+      "required": true,
+      "show_if": {
+        "field_id": "children_residing",
+        "operator": "equals",
+        "value": "Yes"
+      }
+    },
+    {
+      "id": "pets_page",
+      "type": "page_break",
+      "label": "Pets",
+      "required": false
+    },
+    {
+      "id": "pets",
+      "endpoint_key": "pets",
+      "label": "Do you have any pets?",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "pet_details_page",
+      "type": "page_break",
+      "label": "Pet Details",
+      "required": false
+    },
+    {
+      "id": "pet_details",
+      "endpoint_key": "pet_details",
+      "label": "Please provide details of your pet(s), including the type, breed, size, age, and temperament.",
+      "type": "textarea",
+      "required": true,
+      "show_if": {
+        "field_id": "pets",
+        "operator": "equals",
+        "value": "Yes"
+      }
+    },
+    {
+      "id": "pet_photo",
+      "endpoint_key": "pet_photo",
+      "label": "Please upload a recent photo of your pet(s).",
+      "type": "file",
+      "required": true,
+      "accept": "image",
+      "show_if": {
+        "field_id": "pets",
+        "operator": "equals",
+        "value": "Yes"
+      }
+    },
+    {
+      "id": "pet_photo_help",
+      "type": "text_block",
+      "label": "If you have more than one pet, combine their photos into one image. JPG, PNG, GIF or WebP. Maximum 10 MB.",
+      "required": false,
+      "show_if": {
+        "field_id": "pets",
+        "operator": "equals",
+        "value": "Yes"
+      }
+    },
+    {
+      "id": "applicant_page",
+      "type": "page_break",
+      "label": "Applicant Details",
+      "required": false
+    },
+    {
+      "id": "name",
+      "endpoint_key": "name",
+      "label": "Full name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "preferred_name",
+      "endpoint_key": "preferred_name",
+      "label": "Preferred Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "current_address",
+      "endpoint_key": "current_address",
+      "label": "Current or alternative address",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "suburb",
+      "endpoint_key": "suburb",
+      "label": "Suburb",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "state",
+      "endpoint_key": "state",
+      "label": "State",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "email",
+      "endpoint_key": "email",
+      "label": "Email address",
+      "type": "email",
+      "required": true
+    },
+    {
+      "id": "mobile",
+      "endpoint_key": "phone",
+      "label": "Phone number",
+      "type": "phone",
+      "required": true
+    },
+    {
+      "id": "current_employer",
+      "endpoint_key": "current_employer",
+      "label": "Current Employer",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "applicant_1_employment_type",
+      "endpoint_key": "applicant_1_employment_type",
+      "label": "Employment Type",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Permanent Full-Time",
+        "Permanent Part-Time",
+        "Casual / Contractor",
+        "Student",
+        "Unemployed",
+        "Other"
+      ],
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_1_employment_other",
+      "endpoint_key": "applicant_1_employment_other",
+      "type": "text",
+      "label": "Other employment type",
+      "required": true,
+      "show_if": {
+        "field_id": "applicant_1_employment_type",
+        "operator": "equals",
+        "value": "Other"
+      }
+    },
+    {
+      "id": "single_employment_page",
+      "type": "page_break",
+      "label": "Employment Details",
+      "required": false
+    },
+    {
+      "id": "employment_type",
+      "endpoint_key": "employment_type",
+      "label": "Employment Type",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Permanent Full-Time",
+        "Permanent Part-Time",
+        "Casual / Contractor",
+        "Student",
+        "Unemployed"
+      ],
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "1 Person"
+      }
+    },
+    {
+      "id": "primary_schedule_page",
+      "type": "page_break",
+      "label": "Employment Schedule",
+      "required": false
+    },
+    {
+      "id": "work_roster",
+      "endpoint_key": "work_roster",
+      "label": "Work Roster / Typical Hours\n(e.g. Mon–Fri 8am–5pm, FIFO 2:1, Casual 20-30 hrs/week, etc.)",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "employment_type",
+        "operator": "equals",
+        "value": "Permanent Full-Time",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "employment_type",
+            "operator": "equals",
+            "value": "Permanent Full-Time"
+          },
+          {
+            "field_id": "employment_type",
+            "operator": "equals",
+            "value": "Permanent Part-Time"
+          },
+          {
+            "field_id": "employment_type",
+            "operator": "equals",
+            "value": "Casual / Contractor"
+          },
+          {
+            "field_id": "applicant_1_employment_type",
+            "operator": "equals",
+            "value": "Permanent Full-Time"
+          },
+          {
+            "field_id": "applicant_1_employment_type",
+            "operator": "equals",
+            "value": "Permanent Part-Time"
+          },
+          {
+            "field_id": "applicant_1_employment_type",
+            "operator": "equals",
+            "value": "Casual / Contractor"
+          },
+          {
+            "field_id": "applicant_1_employment_type",
+            "operator": "equals",
+            "value": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "primary_residency_page",
+      "type": "page_break",
+      "label": "Citizenship / Residency Details",
+      "required": false
+    },
+    {
+      "id": "residency_status",
+      "endpoint_key": "residency_status",
+      "label": "Citizenship / Residency Status",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Australian Citizen",
+        "Permanent Resident",
+        "New Zealand Citizen",
+        "Temporary Visa Holder",
+        "Other"
+      ]
+    },
+    {
+      "id": "residency_other",
+      "endpoint_key": "residency_other",
+      "type": "text",
+      "label": "Other citizenship / residency status",
+      "required": true,
+      "show_if": {
+        "field_id": "residency_status",
+        "operator": "equals",
+        "value": "Other"
+      }
+    },
+    {
+      "id": "primary_visa_page",
+      "type": "page_break",
+      "label": "Visa Details",
+      "required": false
+    },
+    {
+      "id": "visa_type",
+      "endpoint_key": "visa_type",
+      "label": "Visa Type",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "residency_status",
+        "operator": "equals",
+        "value": "Temporary Visa Holder",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "residency_status",
+            "operator": "equals",
+            "value": "Temporary Visa Holder"
+          },
+          {
+            "field_id": "residency_status",
+            "operator": "equals",
+            "value": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "visa_expiry_date",
+      "endpoint_key": "visa_expiry_date",
+      "label": "Visa Expiry Date",
+      "type": "date",
+      "required": true,
+      "show_if": {
+        "field_id": "residency_status",
+        "operator": "equals",
+        "value": "Temporary Visa Holder",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "residency_status",
+            "operator": "equals",
+            "value": "Temporary Visa Holder"
+          },
+          {
+            "field_id": "residency_status",
+            "operator": "equals",
+            "value": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "applicant_2_page",
+      "type": "page_break",
+      "label": "Applicant 2 Details",
+      "required": false
+    },
+    {
+      "id": "applicant_2_name",
+      "endpoint_key": "applicant_2_name",
+      "label": "Applicant 2 name",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_preferred_name",
+      "endpoint_key": "applicant_2_preferred_name",
+      "label": "Applicant 2 preferred name",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_current_address",
+      "endpoint_key": "applicant_2_current_address",
+      "label": "Applicant 2 current or alternative address",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_suburb",
+      "endpoint_key": "applicant_2_suburb",
+      "label": "Applicant 2 suburb",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_state",
+      "endpoint_key": "applicant_2_state",
+      "label": "Applicant 2 state",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_postcode",
+      "endpoint_key": "applicant_2_postcode",
+      "label": "Applicant 2 postcode",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_email",
+      "endpoint_key": "applicant_2_email",
+      "label": "Applicant 2 email address",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_phone",
+      "endpoint_key": "applicant_2_phone",
+      "label": "Applicant 2 phone number",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_current_employer",
+      "endpoint_key": "applicant_2_current_employer",
+      "label": "Applicant 2 current employer",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_employment_page",
+      "type": "page_break",
+      "label": "Applicant 2 Employment Details",
+      "required": false
+    },
+    {
+      "id": "applicant_2_employment_type",
+      "endpoint_key": "applicant_2_employment_type",
+      "label": "Applicant 2 employment type",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Permanent Full-Time",
+        "Permanent Part-Time",
+        "Casual / Contractor",
+        "Student",
+        "Unemployed"
+      ],
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_schedule_page",
+      "type": "page_break",
+      "label": "Applicant 2 Employment Schedule",
+      "required": false
+    },
+    {
+      "id": "applicant_2_work_roster",
+      "endpoint_key": "applicant_2_work_roster",
+      "label": "Applicant 2 Work Roster / Typical Hours\n(e.g. Mon–Fri 8am–5pm, FIFO 2:1, Casual 20-30 hrs/week, etc.)",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "applicant_2_employment_type",
+        "operator": "equals",
+        "value": "Permanent Full-Time",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "applicant_2_employment_type",
+            "operator": "equals",
+            "value": "Permanent Full-Time"
+          },
+          {
+            "field_id": "applicant_2_employment_type",
+            "operator": "equals",
+            "value": "Permanent Part-Time"
+          },
+          {
+            "field_id": "applicant_2_employment_type",
+            "operator": "equals",
+            "value": "Casual / Contractor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "applicant_2_residency_page",
+      "type": "page_break",
+      "label": "Applicant 2 Citizenship / Residency Details",
+      "required": false
+    },
+    {
+      "id": "applicant_2_residency_status",
+      "endpoint_key": "applicant_2_residency_status",
+      "label": "Applicant 2 citizenship / residency status",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Australian Citizen",
+        "Permanent Resident",
+        "New Zealand Citizen",
+        "Temporary Visa Holder",
+        "Other"
+      ],
+      "show_if": {
+        "field_id": "occupants",
+        "operator": "equals",
+        "value": "2 People"
+      }
+    },
+    {
+      "id": "applicant_2_residency_other",
+      "endpoint_key": "applicant_2_residency_other",
+      "type": "text",
+      "label": "Applicant 2 other citizenship / residency status",
+      "required": true,
+      "show_if": {
+        "field_id": "applicant_2_residency_status",
+        "operator": "equals",
+        "value": "Other"
+      }
+    },
+    {
+      "id": "applicant_2_visa_page",
+      "type": "page_break",
+      "label": "Applicant 2 Visa Details",
+      "required": false
+    },
+    {
+      "id": "applicant_2_visa_type",
+      "endpoint_key": "applicant_2_visa_type",
+      "label": "Applicant 2 visa type",
+      "type": "text",
+      "required": true,
+      "show_if": {
+        "field_id": "applicant_2_residency_status",
+        "operator": "equals",
+        "value": "Temporary Visa Holder",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "applicant_2_residency_status",
+            "operator": "equals",
+            "value": "Temporary Visa Holder"
+          },
+          {
+            "field_id": "applicant_2_residency_status",
+            "operator": "equals",
+            "value": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "applicant_2_visa_expiry_date",
+      "endpoint_key": "applicant_2_visa_expiry_date",
+      "label": "Applicant 2 visa expiry date",
+      "type": "date",
+      "required": true,
+      "show_if": {
+        "field_id": "applicant_2_residency_status",
+        "operator": "equals",
+        "value": "Temporary Visa Holder",
+        "match": "any",
+        "conditions": [
+          {
+            "field_id": "applicant_2_residency_status",
+            "operator": "equals",
+            "value": "Temporary Visa Holder"
+          },
+          {
+            "field_id": "applicant_2_residency_status",
+            "operator": "equals",
+            "value": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lease_page",
+      "type": "page_break",
+      "label": "Shared Facilities Available",
+      "required": false
+    },
+    {
+      "id": "shared_facilities",
+      "type": "text_block",
+      "label": "Kitchen\nLaundry\nLounge\nDining\nBack Yard\nOff Street Parking",
+      "required": false
+    },
+    {
+      "id": "move_in_date",
+      "endpoint_key": "move_in_date",
+      "label": "Preferred Start Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "length_of_stay",
+      "endpoint_key": "length_of_stay",
+      "label": "Preferred Lease Duration",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "3 months",
+        "6 months",
+        "12 months",
+        "Other"
+      ]
+    },
+    {
+      "id": "lease_duration_other",
+      "endpoint_key": "lease_duration_other",
+      "type": "text",
+      "label": "Other preferred lease duration",
+      "required": true,
+      "show_if": {
+        "field_id": "length_of_stay",
+        "operator": "equals",
+        "value": "Other"
+      }
+    },
+    {
+      "id": "furnishing_status",
+      "endpoint_key": "furnishing_status",
+      "label": "Furnishing Status",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Furnished",
+        "Unfurnished"
+      ]
+    },
+    {
+      "id": "furniture_page",
+      "type": "page_break",
+      "label": "Furniture Details",
+      "required": false
+    },
+    {
+      "id": "furniture_details",
+      "endpoint_key": "furniture_details",
+      "label": "If you selected \"Unfurnished\", please list any furniture you intend to bring:\n(e.g. bed, mattress, desk, chair, drawers, TV, sofa, dining table, etc.)",
+      "type": "textarea",
+      "required": true,
+      "show_if": {
+        "field_id": "furnishing_status",
+        "operator": "equals",
+        "value": "Unfurnished"
+      }
+    },
+    {
+      "id": "weekly_rent_page",
+      "type": "page_break",
+      "label": "Current Weekly Rent",
+      "required": false
+    },
+    {
+      "id": "weekly_rent_instructions",
+      "type": "text_block",
+      "label": "Please note the following tenancy requirements:\nTwo (2) weeks’ rent is payable in advance prior to move-in.\nA bond equivalent to four (4) weeks’ rent is required.\nWiFi is included in the weekly rent.\nUtilities are not included in the weekly rent and will be shared separately between housemates. This includes power, water and gas.\nPRICE GUARANTEE – For any fixed-term lease agreement renewal, the agreed rental amount will remain fixed for the duration of the renewed lease, subject to the terms of the Agreement.",
+      "required": false
+    },
+    {
+      "id": "weekly_rent",
+      "endpoint_key": "weekly_rent",
+      "label": "Enter rent amount per week",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "references_page",
+      "type": "page_break",
+      "label": "House Rules",
+      "required": false
+    },
+    {
+      "id": "house_rules",
+      "type": "text_block",
+      "label": "House rules not limited to: Common areas left clean after use, No vehicle repairs, No smoking, No unauthorised pets or parties. Refer to the lease for a detailed list.",
+      "required": false
+    },
+    {
+      "id": "verification_consent",
+      "endpoint_key": "verification_consent",
+      "label": "Consent for Verification Checks\nPlease tick Yes to provide consent for due diligence checks, including:\n- Police Clearance Check\n- Bank statements and/or employee payslips\n- Reference Checks",
+      "type": "radio",
+      "required": true,
+      "options": [
+        "Yes"
+      ]
+    },
+    {
+      "id": "tenancy_reference",
+      "endpoint_key": "tenancy_reference",
+      "label": "Current/Previous Tenancy Details\nPlease provide your most recent rental history where possible, including the name and contact details of your property manager or owner. Please provide their phone number and email address, if available, so we can contact them for a rental reference. If we’re unable to reach them by phone, we may contact them via email instead.",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "employer_reference",
+      "endpoint_key": "employer_reference",
+      "label": "Employer Details\nPlease provide details of your current employer, including the business name, name of your employment referee, and contact details (e.g. phone number and/or email address). If not applicable, please enter N/A.",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "other_reference",
+      "endpoint_key": "other_reference",
+      "label": "Other Reference\nPlease provide details of an additional reference (e.g. personal, professional, or character reference), including their full name and contact details (e.g. phone number and/or email address). We may contact your referee to obtain a reference. If you do not have an additional reference, please enter N/A.",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "supporting_documents_instructions",
+      "type": "text_block",
+      "label": "Please upload the following documents to support your application:\n- Valid photo identification (e.g. Passport,  Australian Driving Licence - front and back)\n- Proof of income (e.g. recent payslips, bank statements showing transactions, or Centrelink statement if applicable)\n- Any additional documents that may support your application (e.g. employment contract, reference letter from landlord, rental ledger)",
+      "required": false
+    },
+    {
+      "id": "supporting_documents_limits",
+      "type": "text_block",
+      "label": "Combine documents into PDFs where needed. Upload up to four files across this application, including any pet photo: 10 MB per file and 20 MB total. PDF, Word, JPG, PNG, GIF or WebP.",
+      "required": false
+    },
+    {
+      "id": "supporting_document_1",
+      "endpoint_key": "supporting_document_1",
+      "label": "Supporting document 1",
+      "type": "file",
+      "required": true,
+      "accept": "document"
+    },
+    {
+      "id": "supporting_document_2",
+      "endpoint_key": "supporting_document_2",
+      "type": "file",
+      "label": "Supporting document 2",
+      "required": false,
+      "accept": "document"
+    },
+    {
+      "id": "supporting_document_3",
+      "endpoint_key": "supporting_document_3",
+      "type": "file",
+      "label": "Supporting document 3",
+      "required": false,
+      "accept": "document"
+    },
+    {
+      "id": "supporting_document_4",
+      "endpoint_key": "supporting_document_4",
+      "type": "file",
+      "label": "Supporting document 4",
+      "required": false,
+      "accept": "document",
+      "show_if": {
+        "field_id": "pets",
+        "operator": "equals",
+        "value": "No"
+      }
+    },
+    {
+      "id": "application_consent",
+      "endpoint_key": "application_consent",
+      "label": "By submitting this form, I confirm that I consent to Enopac Property Group Pty Ltd contacting my references and to the collection and use of my information for the purpose of assessing my application. I understand that if unsuccessful, my information will be securely deleted and not retained.",
+      "type": "checkbox",
+      "required": true,
+      "placeholder": "Confirm"
+    }
+  ],
+  "successMessage": "Thank you for your application. We have successfully received your submission and will review it shortly. If further information is required, we will be in touch."
+}

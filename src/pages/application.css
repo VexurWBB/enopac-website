@@ -1,0 +1,39 @@
+.application-shell { max-width: 54rem; }
+.application-intro { margin: 2.5rem 0; }
+.application-intro h1 { margin-top: 0.75rem; }
+.application-intro a { color: var(--color-gold); text-decoration: underline; }
+.application-card { color: var(--color-brand); background: var(--color-cream); border: 1px solid var(--gold-mid); border-radius: 1.25rem; padding: clamp(1.25rem, 5vw, 3rem); }
+.application-card [hidden] { display: none !important; }
+.application-card h2 { font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.2; margin: 1.5rem 0 2rem; scroll-margin-top: 7rem; }
+.application-card h2:focus { outline: none; }
+.application-progress { display: flex; gap: 1rem; justify-content: space-between; font-size: 0.8rem; }
+.application-card progress { display: block; width: 100%; height: 0.4rem; margin-top: 1rem; appearance: none; border: 0; background: var(--gold-highlight); color: var(--gold-deep); }
+.application-card progress::-webkit-progress-bar { background: var(--gold-highlight); }
+.application-card progress::-webkit-progress-value { background: var(--gold-deep); }
+.application-card progress::-moz-progress-bar { background: var(--gold-deep); }
+.application-question { display: block; min-width: 0; margin: 0 0 1.5rem; border: 0; padding: 0; }
+.application-question > span, .application-question legend { display: block; width: 100%; margin-bottom: 0.6rem; font-weight: 600; white-space: pre-line; line-height: 1.6; }
+.application-question input:not([type=radio]), .application-question textarea { display: block; box-sizing: border-box; width: 100%; min-width: 0; min-height: 3rem; padding: 0.8rem 1rem; border: 1px solid var(--gold-mid); border-radius: 0.5rem; background: transparent; color: var(--color-brand); font: inherit; }
+.application-question textarea { resize: vertical; }
+.application-question input:focus-visible, .application-question textarea:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+.application-options { display: grid; gap: 0.65rem; }
+.application-options label { display: flex; align-items: center; gap: 0.85rem; min-height: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--gold-mid); border-radius: 0.5rem; cursor: pointer; }
+.application-options label:has(input:checked) { background: color-mix(in srgb, var(--color-gold) 22%, transparent); border-color: var(--gold-deep); }
+.application-options input, .application-consent input { width: 1.2rem; height: 1.2rem; flex-shrink: 0; accent-color: var(--color-brand); }
+.application-consent { display: flex; align-items: flex-start; gap: 0.85rem; margin: 1.75rem 0; line-height: 1.65; }
+.application-consent input { margin-top: 0.25rem; }
+.application-note { margin: 0 0 1.5rem; white-space: pre-line; line-height: 1.65; }
+.application-actions { display: flex; gap: 1rem; justify-content: space-between; margin-top: 2rem; }
+.application-actions .btn-outline { color: var(--color-brand); border-color: var(--gold-deep); }
+.application-actions .btn-cta { margin-left: auto; }
+.application-privacy { margin: 1.5rem 0 0; font-size: 0.8rem; line-height: 1.6; }
+.application-error { border-left: 3px solid var(--color-brand); padding: 0.85rem 1rem; background: color-mix(in srgb, var(--gold-mid) 20%, transparent); font-weight: 600; }
+.application-success { display: grid; gap: 1rem; }
+.application-success h2 { margin: 0; }
+.application-success .eyebrow { color: var(--color-brand); }
+.application-trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 480px) {
+  .application-progress { flex-direction: column; gap: 0.35rem; }
+  .application-actions .btn-cta, .application-actions .btn-outline { padding-left: 1rem; padding-right: 1rem; }
+  .application-question input[type=file] { padding: 0.75rem 0.4rem; font-size: 0.85rem; }
+}

@@ -71,6 +71,12 @@ export const seoRoutes: RouteMeta[] = [
       'Rooms for rent in Alkimos, Eglinton, Clarkson, Brabham, Wellard, Lakelands and Mandurah, plus Frankston VIC. Contact Enopac for current availability.',
     breadcrumb: [home, { name: 'Rooms for Rent', path: '/rooms-for-rent' }],
   },
+  {
+    path: '/apply',
+    title: 'Room Application | Enopac Property Group',
+    description: 'Apply for a room with Enopac Property Group. Complete a rental application for one or two people and provide supporting documents.',
+    breadcrumb: [home, { name: 'Rooms for Rent', path: '/rooms-for-rent' }, { name: 'Apply', path: '/apply' }],
+  },
   ...listedRentals
     .filter((r) => r.street)
     .map((r) => ({

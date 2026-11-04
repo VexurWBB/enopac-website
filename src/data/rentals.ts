@@ -35,7 +35,7 @@ function gallery(slug: string, street: string, files: string[]): RentalPhoto[] {
 }
 
 // Shared application form. A property can override it below.
-export const rentalApplicationUrl: string = 'https://app.vexur.com.au/forms/enopac-room-application-3122522c'
+export const rentalApplicationUrl: string = '/apply'
 
 // Eleven slots: ten supplied locations and one unpublished slot awaiting details.
 // Photos and availability must be confirmed before advertising individual rooms.
@@ -68,6 +68,7 @@ export const listedRentals = rentalProperties.filter((property) => property.publ
 export function getApplicationUrl(property: RentalProperty): string | undefined {
   const value = property.applicationUrl || rentalApplicationUrl
   if (!value) return undefined
+  if (value === '/apply') return `/apply?property=${encodeURIComponent(`${property.street}, ${property.suburb}, ${property.state}`)}`
   try {
     const url = new URL(value)
     return url.protocol === 'https:' ? url.href : undefined
