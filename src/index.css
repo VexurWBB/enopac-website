@@ -1,3 +1,4 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
 @source "../index.html";
@@ -102,12 +103,8 @@
 
 /* ── Scroll reveal (pairs with <Reveal>) ── */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition:
-    opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.is-visible {
@@ -5438,3 +5435,8 @@ a.contact-info-value:hover {
 .items-center { align-items: center; }
 .justify-center { justify-content: center; }
 .w-full { width: 100%; }
+
+/* Native dialog supplies focus containment and an inert background. */
+dialog.booking-modal { border: 0; margin: 0; max-width: none; max-height: none; width: 100%; height: 100%; background: transparent; color: inherit; }
+dialog.booking-modal:not([open]) { display: none; }
+dialog.booking-modal::backdrop { background: rgba(10, 14, 16, 0.78); backdrop-filter: blur(6px); }

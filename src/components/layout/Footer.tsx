@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-heading">Quick Links</h4>
+            <h2 className="footer-heading">Quick Links</h2>
             <ul className="footer-links">
               {quickLinks.map((l) => (
                 <li key={l.to}><Link to={l.to}>{l.label}</Link></li>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-heading">Services</h4>
+            <h2 className="footer-heading">Services</h2>
             <ul className="footer-links">
               {services.map((s) => (
                 <li key={s.slug}><Link to={`/services/${s.slug}`}>{s.title}</Link></li>
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-heading">Contact</h4>
+            <h2 className="footer-heading">Contact</h2>
             <ul className="footer-links footer-links--contact">
               <li>
                 <a href={site.phoneHref} className="footer-contact-item">

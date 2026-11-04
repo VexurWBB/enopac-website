@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 import BookingButton from './BookingButton'
 import { site } from '../../data/site'
 import { heroImages } from '../../data/heroImages'
@@ -16,7 +17,7 @@ export default function CTASection({
   return (
     <section className="cta-finale section-padding section-surface section-light">
       <div className="cta-finale-bg" aria-hidden="true">
-        <img src={heroImages.contact.src} alt="" loading="lazy" />
+        <ResponsiveImage src={heroImages.contact.src} alt="" loading="lazy" />
       </div>
       <div className="cta-finale-frame" aria-hidden="true" />
 

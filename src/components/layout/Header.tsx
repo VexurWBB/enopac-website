@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import Logo from '../ui/Logo'
 import BookingButton from '../ui/BookingButton'
@@ -19,9 +19,19 @@ function scrollToTop() {
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const toggleRef = useRef<HTMLButtonElement>(null)
   const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
   const overHero = pathname === '/'
+
+  useEffect(() => {
+    if (!open) return
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setOpen(false); toggleRef.current?.focus() }
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [open])
 
   useEffect(() => {
     if (!overHero) {
@@ -75,7 +85,7 @@ export default function Header() {
           <BookingButton onClick={handleNavClick}>Book a Call</BookingButton>
         </div>
 
-        <button type="button" className="mobile-toggle" aria-label="Menu" onClick={() => setOpen(!open)}>
+        <button ref={toggleRef} type="button" className="mobile-toggle" aria-label="Menu" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>
           <span style={open ? { transform: 'translateY(7px) rotate(45deg)' } : {}} />
           <span style={open ? { opacity: 0 } : {}} />
           <span style={open ? { transform: 'translateY(-7px) rotate(-45deg)' } : {}} />
@@ -83,7 +93,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="mobile-menu" aria-label="Mobile navigation">
+        <nav id="mobile-navigation" className="mobile-menu" aria-label="Mobile navigation">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}

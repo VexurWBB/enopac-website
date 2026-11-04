@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 type PageHeroProps = {
   eyebrow: string
   title: React.ReactNode
@@ -51,7 +52,7 @@ export default function PageHero({
           <figure className="hero-media">
             <span className="hero-media-corner hero-media-corner--tl" aria-hidden="true" />
             <span className="hero-media-corner hero-media-corner--br" aria-hidden="true" />
-            <img src={image} alt={imageAlt} loading="eager" />
+            <ResponsiveImage src={image} alt={imageAlt} loading="eager" fetchPriority="high" />
             {imageCaption && (
               <figcaption className="hero-media-caption">
                 <span className="hero-media-caption-dot" aria-hidden="true" />

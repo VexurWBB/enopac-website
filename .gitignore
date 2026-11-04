@@ -32,3 +32,5 @@ temp_interactive_push.bat
 .env.local
 .env.*.local
 .vscode/
+output/
+artifacts/

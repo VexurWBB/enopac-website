@@ -1,3 +1,4 @@
+import ResponsiveImage from '../components/ui/ResponsiveImage'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/ui/PageHero'
 import SectionHeader from '../components/ui/SectionHeader'
@@ -31,7 +32,7 @@ export default function RentalsPage() {
                   <Reveal key={property.slug}>
                     <Link className="card rental-card" to={`/rooms-for-rent/${property.slug}`} aria-label={`View ${property.street}, ${property.suburb}`}>
                       <div className="rental-photo">
-                        {property.photos?.length ? <><img src={(property.coverPhoto ?? property.photos[0]).src} alt={(property.coverPhoto ?? property.photos[0]).alt} loading="lazy" /><span className="rental-photo-count">{property.photos.length} photos</span></> :<><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
+                        {property.photos?.length ? <><ResponsiveImage src={(property.coverPhoto ?? property.photos[0]).src} alt={(property.coverPhoto ?? property.photos[0]).alt} loading="lazy" /><span className="rental-photo-count">{property.photos.length} photos</span></> :<><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
                       </div>
                       <div className="rental-card-content">
                         <p className="eyebrow">{property.suburb} · {property.state}</p>

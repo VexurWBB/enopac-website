@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import Button from '../components/ui/Button'
 import { site } from '../data/site'
@@ -30,7 +30,10 @@ function visibleFields(answers: Answers) {
   return visible
 }
 
+const subscribe = () => () => {}
+
 export default function ApplicationPage() {
+  const enhanced = useSyncExternalStore(subscribe, () => true, () => false)
   const [search] = useSearchParams()
   const [answers, setAnswers] = useState<Answers>(() => ({ preferred_property: (search.get('property') ?? '').slice(0, 200) }))
   const [uploads, setUploads] = useState<Record<string, File>>({})
@@ -115,7 +118,7 @@ export default function ApplicationPage() {
   function renderField(field: Field) {
     if (field.type === 'text_block') return <p className="application-note">{field.label}</p>
     if (field.type === 'heading') return <h3>{field.label}</h3>
-    const disabled = !visible.has(field.id) || status === 'sending'
+    const disabled = !enhanced || !visible.has(field.id) || status === 'sending'
     const label = <>{field.label}{field.required && <span aria-hidden="true"> *</span>}</>
     if (field.type === 'radio') return <fieldset className="application-question" disabled={disabled}>
       <legend>{label}</legend>
@@ -149,13 +152,14 @@ export default function ApplicationPage() {
         <h1 className="section-title">Apply for a room</h1>
         <p className="section-subtitle">Complete an application for one or two people. If you need help, call <a href={site.phoneHref}>{site.phone}</a> or email <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
       </header>
+      <noscript><p className="application-note">The online application needs JavaScript. Please call or email our team using the contact details above for help applying.</p></noscript>
       <div className="application-card">
         {status === 'sent' ? <div className="application-success" role="status">
           <p className="eyebrow">Thank you</p>
           <h2 ref={headingRef} tabIndex={-1}>Application received</h2>
           <p>{definition.successMessage}</p>
           <Button to="/rooms-for-rent">Back to rental locations</Button>
-        </div> : <form ref={formRef} onSubmit={submit} noValidate aria-busy={status === 'sending'}>
+        </div> : <form ref={formRef} method="post" action="/apply" onSubmit={submit} noValidate aria-busy={status === 'sending'}>
           <div className="application-progress"><span>Step {position + 1} of {available.length}</span><span>Required fields are marked *</span></div>
           <progress max={available.length} value={position + 1} aria-label="Application progress" />
           <h2 ref={headingRef} tabIndex={-1}>{pages[current].title}</h2>
@@ -165,8 +169,8 @@ export default function ApplicationPage() {
           </section>)}
           {error && <p className="application-error" role="alert">{error}</p>}
           <div className="application-actions">
-            {position > 0 && <Button onClick={() => move(available[position - 1])} disabled={status === 'sending'} variant="outline">Back</Button>}
-            <Button type="submit" disabled={status === 'sending'}>{status === 'sending' ? 'Sending application…' : last ? 'Send application' : 'Next'}</Button>
+            {position > 0 && <Button onClick={() => move(available[position - 1])} disabled={!enhanced || status === 'sending'} variant="outline">Back</Button>}
+            <Button type="submit" disabled={!enhanced || status === 'sending'}>{status === 'sending' ? 'Sending application…' : last ? 'Send application' : 'Next'}</Button>
           </div>
           <p className="application-privacy">Your details are used to assess your application. This does not sign you up for marketing.</p>
         </form>}

@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 import { Link } from 'react-router-dom'
 import type { Service } from '../../data/services'
 import { heroImages } from '../../data/heroImages'
@@ -29,7 +30,7 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
             <div className={`service-showcase-split${index % 2 === 1 ? ' service-showcase-split--reverse' : ''}`}>
               <div className="service-showcase-media">
                 <figure className="service-showcase-frame">
-                  <img src={image.src} alt={image.alt} loading="lazy" />
+                  <ResponsiveImage src={image.src} alt={image.alt} loading="lazy" />
                   <span className="service-showcase-frame-corner service-showcase-frame-corner--tl" aria-hidden="true" />
                   <span className="service-showcase-frame-corner service-showcase-frame-corner--br" aria-hidden="true" />
                   <span className="service-showcase-frame-bar" aria-hidden="true" />

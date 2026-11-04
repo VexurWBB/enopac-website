@@ -1,49 +1,37 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import VexurCalendarWidget from './VexurCalendarWidget'
 
-type BookingModalProps = {
-  open: boolean
-  onClose: () => void
-}
+type BookingModalProps = { open: boolean; onClose: () => void }
 
 export default function BookingModal({ open, onClose }: BookingModalProps) {
+  const ref = useRef<HTMLDialogElement>(null)
   useEffect(() => {
-    if (!open) return
-
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-
+    const dialog = ref.current
+    if (!dialog || !open) return
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    const previousOverflow = document.body.style.overflow
+    dialog.showModal()
     document.body.style.overflow = 'hidden'
-    window.addEventListener('keydown', onKeyDown)
-
     return () => {
-      document.body.style.overflow = ''
-      window.removeEventListener('keydown', onKeyDown)
+      dialog.close()
+      document.body.style.overflow = previousOverflow
+      opener?.focus()
     }
-  }, [open, onClose])
+  }, [open])
 
-  if (!open) return null
-
-  return (
-    <div
-      className="booking-modal is-open"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Book a strategy session"
-    >
-      <button
-        type="button"
-        className="booking-modal-backdrop"
-        aria-label="Close booking"
-        onClick={onClose}
-      />
-      <div className="booking-modal-content">
-        <button type="button" className="booking-modal-close" aria-label="Close" onClick={onClose}>
-          ×
-        </button>
-        <VexurCalendarWidget />
-      </div>
+  return <dialog ref={ref} className="booking-modal" aria-label="Book a strategy session" onCancel={event => { event.preventDefault(); onClose() }} onKeyDown={event => {
+    if (event.key !== 'Tab') return
+    const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), iframe, [tabindex]'))
+      .filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0)
+    const first = controls[0]
+    const last = controls[controls.length - 1]
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus() }
+  }}>
+    <button type="button" className="booking-modal-backdrop" tabIndex={-1} aria-label="Close booking" onClick={onClose} />
+    <div className="booking-modal-content">
+      <button type="button" className="booking-modal-close" aria-label="Close" onClick={onClose}>&times;</button>
+      {open && <VexurCalendarWidget />}
     </div>
-  )
+  </dialog>
 }
