@@ -8,7 +8,7 @@ export default function ContactPage() {
       <div className="section-container">
         <Reveal>
           <div className="page-hero-eyebrow-center-wrap contact-section-head">
-            <p className="eyebrow page-hero-eyebrow-center">Contact us</p>
+            <h1 className="section-title">Contact Enopac Property Group</h1>
             <span className="page-hero-eyebrow-flare" aria-hidden="true" />
           </div>
         </Reveal>

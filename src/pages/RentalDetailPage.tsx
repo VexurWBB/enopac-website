@@ -1,3 +1,4 @@
+import ResponsiveImage from '../components/ui/ResponsiveImage'
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Button from '../components/ui/Button'
@@ -13,7 +14,7 @@ function RentalGallery({ photos }: { photos: RentalPhoto[] }) {
   return (
     <div className="rental-gallery mt-10">
       <div className="rental-photo rental-photo--detail">
-        <img src={current.src} alt={current.alt} />
+        <ResponsiveImage src={current.src} alt={current.alt} fetchPriority="high" />
         {photos.length > 1 && <>
           <button type="button" className="rental-gallery-nav rental-gallery-nav--prev" onClick={() => step(-1)} aria-label="Previous photo">&lsaquo;</button>
           <button type="button" className="rental-gallery-nav rental-gallery-nav--next" onClick={() => step(1)} aria-label="Next photo">&rsaquo;</button>
@@ -24,7 +25,7 @@ function RentalGallery({ photos }: { photos: RentalPhoto[] }) {
       {photos.length > 1 && <div className="rental-gallery-thumbs">
         {photos.map((photo, i) => (
           <button type="button" key={photo.src} className="rental-gallery-thumb" aria-current={i === index} aria-label={`Show ${photo.alt}`} onClick={() => setIndex(i)}>
-            <img src={photo.src} alt="" loading="lazy" />
+            <ResponsiveImage src={photo.src} alt="" sizes="100px" loading="lazy" />
           </button>
         ))}
       </div>}
