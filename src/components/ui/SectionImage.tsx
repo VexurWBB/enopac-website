@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 type SectionImageProps = {
   src: string
   alt: string
@@ -7,7 +8,7 @@ type SectionImageProps = {
 export default function SectionImage({ src, alt, tall }: SectionImageProps) {
   return (
     <figure className={`section-image${tall ? ' tall' : ''}`}>
-      <img src={src} alt={alt} loading="lazy" />
+      <ResponsiveImage src={src} alt={alt} loading="lazy" />
     </figure>
   )
 }

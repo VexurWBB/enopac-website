@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 type LandingHeroProps = {
 
   eyebrow: string
@@ -44,9 +45,9 @@ export default function LandingHero({
 
         <div className="hero-media">
 
-          <img
+          <ResponsiveImage
 
-            src={`${image}?v=8`}
+            src={image}
 
             alt={imageAlt}
 

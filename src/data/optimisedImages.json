@@ -1,0 +1,398 @@
+{
+  "/images/development-timber-vic.jpg": {
+    "src": "/images/optimised/development-timber-vic-1280-da98e8ef1da5.webp",
+    "width": 1400,
+    "height": 933,
+    "srcSet": "/images/optimised/development-timber-vic-240-a316ab69d88e.webp 240w, /images/optimised/development-timber-vic-640-4666ac9632df.webp 640w, /images/optimised/development-timber-vic-1280-da98e8ef1da5.webp 1280w, /images/optimised/development-timber-vic-1400-a85653efcbd7.webp 1400w"
+  },
+  "/images/hero-contact.jpg": {
+    "src": "/images/optimised/hero-contact-1280-48498ed03bec.webp",
+    "width": 1920,
+    "height": 1280,
+    "srcSet": "/images/optimised/hero-contact-240-79e62c38eb95.webp 240w, /images/optimised/hero-contact-640-01dddd690887.webp 640w, /images/optimised/hero-contact-1280-48498ed03bec.webp 1280w, /images/optimised/hero-contact-1920-3cb17621a00f.webp 1920w"
+  },
+  "/images/hero-home.jpg": {
+    "src": "/images/optimised/hero-home-1280-cf8923eba902.webp",
+    "width": 1920,
+    "height": 1080,
+    "srcSet": "/images/optimised/hero-home-240-5c0325c610f2.webp 240w, /images/optimised/hero-home-640-f4723e415cca.webp 640w, /images/optimised/hero-home-1280-cf8923eba902.webp 1280w, /images/optimised/hero-home-1920-27c6542b6b93.webp 1920w"
+  },
+  "/images/hero-process.jpg": {
+    "src": "/images/optimised/hero-process-1280-393ead35657a.webp",
+    "width": 1920,
+    "height": 1264,
+    "srcSet": "/images/optimised/hero-process-240-51a91128f006.webp 240w, /images/optimised/hero-process-640-c6073ce7d254.webp 640w, /images/optimised/hero-process-1280-393ead35657a.webp 1280w, /images/optimised/hero-process-1920-89b8337b87a6.webp 1920w"
+  },
+  "/images/hero-property-management.jpg": {
+    "src": "/images/optimised/hero-property-management-1280-58a0a62c76a1.webp",
+    "width": 1920,
+    "height": 1309,
+    "srcSet": "/images/optimised/hero-property-management-240-471c88eaf026.webp 240w, /images/optimised/hero-property-management-640-9649c22d2e4b.webp 640w, /images/optimised/hero-property-management-1280-58a0a62c76a1.webp 1280w, /images/optimised/hero-property-management-1920-9cd1ff90d015.webp 1920w"
+  },
+  "/images/hero-services.jpg": {
+    "src": "/images/optimised/hero-services-1280-f43746c15d06.webp",
+    "width": 1920,
+    "height": 1238,
+    "srcSet": "/images/optimised/hero-services-240-6518dd8dcfa6.webp 240w, /images/optimised/hero-services-640-e4c1e405de39.webp 640w, /images/optimised/hero-services-1280-f43746c15d06.webp 1280w, /images/optimised/hero-services-1920-037a88ba1a70.webp 1920w"
+  },
+  "/images/region-vic.jpg": {
+    "src": "/images/optimised/region-vic-1280-1ae40a237d6f.webp",
+    "width": 1920,
+    "height": 1080,
+    "srcSet": "/images/optimised/region-vic-240-64077a2b4b80.webp 240w, /images/optimised/region-vic-640-f4f385f81c69.webp 640w, /images/optimised/region-vic-1280-1ae40a237d6f.webp 1280w, /images/optimised/region-vic-1920-cb97dc8ab378.webp 1920w"
+  },
+  "/images/region-wa.jpg": {
+    "src": "/images/optimised/region-wa-1280-fb6921b6f022.webp",
+    "width": 1920,
+    "height": 1280,
+    "srcSet": "/images/optimised/region-wa-240-89790ebf8a24.webp 240w, /images/optimised/region-wa-640-14bdd6cb2079.webp 640w, /images/optimised/region-wa-1280-fb6921b6f022.webp 1280w, /images/optimised/region-wa-1920-465f8808ccec.webp 1920w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-512b103bb629.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-361f28631ed1.webp 240w, /images/optimised/01-kitchen-640-bf2377688d97.webp 640w, /images/optimised/01-kitchen-1280-512b103bb629.webp 1280w, /images/optimised/01-kitchen-1400-d12c8010ca7a.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/02-bedroom.webp": {
+    "src": "/images/optimised/02-bedroom-1280-78cbc713cc78.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-bedroom-240-3dd9fd3279e1.webp 240w, /images/optimised/02-bedroom-640-54947c1b12b1.webp 640w, /images/optimised/02-bedroom-1280-78cbc713cc78.webp 1280w, /images/optimised/02-bedroom-1400-4d48e6463fc0.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/03-bedroom.webp": {
+    "src": "/images/optimised/03-bedroom-1280-e7d6599b5bd2.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-bedroom-240-c9fc0af17304.webp 240w, /images/optimised/03-bedroom-640-e71414ed9ee7.webp 640w, /images/optimised/03-bedroom-1280-e7d6599b5bd2.webp 1280w, /images/optimised/03-bedroom-1400-7d1ae1d25af2.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/04-bathroom.webp": {
+    "src": "/images/optimised/04-bathroom-1280-76c223b096c1.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bathroom-240-818d61f9e4f2.webp 240w, /images/optimised/04-bathroom-640-f5fb158e5f94.webp 640w, /images/optimised/04-bathroom-1280-76c223b096c1.webp 1280w, /images/optimised/04-bathroom-1400-c384476a1f4f.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-d8bf81d3ff00.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bathroom-240-f7dc2cbe210c.webp 240w, /images/optimised/05-bathroom-640-53e74c93ee27.webp 640w, /images/optimised/05-bathroom-1280-d8bf81d3ff00.webp 1280w, /images/optimised/05-bathroom-1400-cc29876fbc26.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/06-laundry.webp": {
+    "src": "/images/optimised/06-laundry-1280-4774f4c642a7.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-laundry-240-8af8a5402a65.webp 240w, /images/optimised/06-laundry-640-2a277cb68dd0.webp 640w, /images/optimised/06-laundry-1280-4774f4c642a7.webp 1280w, /images/optimised/06-laundry-1400-1ce3e3f5d68f.webp 1400w"
+  },
+  "/images/rentals/bleiberg-way-alkimos/07-local-area.webp": {
+    "src": "/images/optimised/07-local-area-1280-69748ecf19ab.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/07-local-area-240-de3a45675b20.webp 240w, /images/optimised/07-local-area-640-070fafebfd24.webp 640w, /images/optimised/07-local-area-1280-69748ecf19ab.webp 1280w, /images/optimised/07-local-area-1400-5ea73599a22e.webp 1400w"
+  },
+  "/images/rentals/commander-drive-alkimos/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-06062742179b.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-b8b596592534.webp 240w, /images/optimised/01-kitchen-640-3ab39315f685.webp 640w, /images/optimised/01-kitchen-1280-06062742179b.webp 1280w, /images/optimised/01-kitchen-1400-cc0dff3d4b2b.webp 1400w"
+  },
+  "/images/rentals/commander-drive-alkimos/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-5b07c131083f.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-living-240-5097a03db1c3.webp 240w, /images/optimised/02-living-640-e51c84140ff0.webp 640w, /images/optimised/02-living-1280-5b07c131083f.webp 1280w, /images/optimised/02-living-1400-0a2857f47824.webp 1400w"
+  },
+  "/images/rentals/commander-drive-alkimos/03-living-dining.webp": {
+    "src": "/images/optimised/03-living-dining-1280-0c99d947f376.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-living-dining-240-79fda32e429e.webp 240w, /images/optimised/03-living-dining-640-a46a0a4c81ff.webp 640w, /images/optimised/03-living-dining-1280-0c99d947f376.webp 1280w, /images/optimised/03-living-dining-1400-9fc1dad85cde.webp 1400w"
+  },
+  "/images/rentals/commander-drive-alkimos/04-dining.webp": {
+    "src": "/images/optimised/04-dining-1280-26743f6d9a3c.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-dining-240-b24d4e9f3d2b.webp 240w, /images/optimised/04-dining-640-71848d6c204a.webp 640w, /images/optimised/04-dining-1280-26743f6d9a3c.webp 1280w, /images/optimised/04-dining-1400-26883e9e78ec.webp 1400w"
+  },
+  "/images/rentals/commander-drive-alkimos/05-laundry.webp": {
+    "src": "/images/optimised/05-laundry-1280-73c2de5aa0ae.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-laundry-240-866116c1f075.webp 240w, /images/optimised/05-laundry-640-aa5e45d81b93.webp 640w, /images/optimised/05-laundry-1280-73c2de5aa0ae.webp 1280w, /images/optimised/05-laundry-1400-3b3439b35bba.webp 1400w"
+  },
+  "/images/rentals/gibson-street-mandurah/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-d90b59244179.webp",
+    "width": 1280,
+    "height": 1051,
+    "srcSet": "/images/optimised/01-kitchen-240-b620ace20b27.webp 240w, /images/optimised/01-kitchen-640-de35d1b8e6ba.webp 640w, /images/optimised/01-kitchen-1280-d90b59244179.webp 1280w"
+  },
+  "/images/rentals/gibson-street-mandurah/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-64f29a079fca.webp",
+    "width": 1280,
+    "height": 1000,
+    "srcSet": "/images/optimised/02-living-240-fa1a7748f703.webp 240w, /images/optimised/02-living-640-46f3ecb07cfd.webp 640w, /images/optimised/02-living-1280-64f29a079fca.webp 1280w"
+  },
+  "/images/rentals/gibson-street-mandurah/03-living-dining.webp": {
+    "src": "/images/optimised/03-living-dining-1280-9bb9b5d576e7.webp",
+    "width": 1280,
+    "height": 1021,
+    "srcSet": "/images/optimised/03-living-dining-240-8e7f38d43443.webp 240w, /images/optimised/03-living-dining-640-ccbdec24921d.webp 640w, /images/optimised/03-living-dining-1280-9bb9b5d576e7.webp 1280w"
+  },
+  "/images/rentals/gibson-street-mandurah/04-outdoor.webp": {
+    "src": "/images/optimised/04-outdoor-1280-6d24743619f8.webp",
+    "width": 1280,
+    "height": 1047,
+    "srcSet": "/images/optimised/04-outdoor-240-1656650098f3.webp 240w, /images/optimised/04-outdoor-640-ac076d80eef6.webp 640w, /images/optimised/04-outdoor-1280-6d24743619f8.webp 1280w"
+  },
+  "/images/rentals/haslam-street-brabham/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-cc9380c81d47.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-a9066d509271.webp 240w, /images/optimised/01-kitchen-640-a62823f87d04.webp 640w, /images/optimised/01-kitchen-1280-cc9380c81d47.webp 1280w, /images/optimised/01-kitchen-1400-c5c30959610a.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-5afb565833a5.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-living-240-80996203d65a.webp 240w, /images/optimised/02-living-640-f6546b284c87.webp 640w, /images/optimised/02-living-1280-5afb565833a5.webp 1280w, /images/optimised/02-living-1400-ab8619f7fd2c.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/03-bedroom.webp": {
+    "src": "/images/optimised/03-bedroom-1280-780d4d817139.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-bedroom-240-f3694b83bd74.webp 240w, /images/optimised/03-bedroom-640-245970ee2744.webp 640w, /images/optimised/03-bedroom-1280-780d4d817139.webp 1280w, /images/optimised/03-bedroom-1400-f5fa1c258214.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/04-bathroom.webp": {
+    "src": "/images/optimised/04-bathroom-1280-23e73c744d87.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bathroom-240-22917b269d90.webp 240w, /images/optimised/04-bathroom-640-fb3a4b39078a.webp 640w, /images/optimised/04-bathroom-1280-23e73c744d87.webp 1280w, /images/optimised/04-bathroom-1400-4219d7fd3300.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-af1fd759503f.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bathroom-240-f169201d961e.webp 240w, /images/optimised/05-bathroom-640-b483ee6e70f3.webp 640w, /images/optimised/05-bathroom-1280-af1fd759503f.webp 1280w, /images/optimised/05-bathroom-1400-9a2749112d78.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/06-laundry.webp": {
+    "src": "/images/optimised/06-laundry-1280-f60a5a347d3e.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-laundry-240-36f0af474bb0.webp 240w, /images/optimised/06-laundry-640-c09b4e0d64c0.webp 640w, /images/optimised/06-laundry-1280-f60a5a347d3e.webp 1280w, /images/optimised/06-laundry-1400-bbacc9617182.webp 1400w"
+  },
+  "/images/rentals/haslam-street-brabham/07-front.webp": {
+    "src": "/images/optimised/07-front-1280-ff37f8c4a257.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/07-front-240-2a90368785a9.webp 240w, /images/optimised/07-front-640-68b1a5714806.webp 640w, /images/optimised/07-front-1280-ff37f8c4a257.webp 1280w, /images/optimised/07-front-1400-82723713050a.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-7952fc761b26.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-5b13a987002d.webp 240w, /images/optimised/01-kitchen-640-eae99f1b332c.webp 640w, /images/optimised/01-kitchen-1280-7952fc761b26.webp 1280w, /images/optimised/01-kitchen-1400-699fbddc5b2c.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/02-kitchen.webp": {
+    "src": "/images/optimised/02-kitchen-1280-6ad7e37e4545.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-kitchen-240-6645a34969a6.webp 240w, /images/optimised/02-kitchen-640-2687926880cd.webp 640w, /images/optimised/02-kitchen-1280-6ad7e37e4545.webp 1280w, /images/optimised/02-kitchen-1400-b318bd5ea2dd.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/03-living.webp": {
+    "src": "/images/optimised/03-living-1280-f74a3ab7986a.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-living-240-6e00d9037bac.webp 240w, /images/optimised/03-living-640-cf9ca9abd4a9.webp 640w, /images/optimised/03-living-1280-f74a3ab7986a.webp 1280w, /images/optimised/03-living-1400-335bff734b26.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/04-bedroom.webp": {
+    "src": "/images/optimised/04-bedroom-1280-99b87edb6a41.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bedroom-240-9e2d067aaa38.webp 240w, /images/optimised/04-bedroom-640-621ed017cdd8.webp 640w, /images/optimised/04-bedroom-1280-99b87edb6a41.webp 1280w, /images/optimised/04-bedroom-1400-3bd078afbda1.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-efebd6926c54.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bathroom-240-185ac02c020f.webp 240w, /images/optimised/05-bathroom-640-cacf5969c522.webp 640w, /images/optimised/05-bathroom-1280-efebd6926c54.webp 1280w, /images/optimised/05-bathroom-1400-36e1b4c7a080.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/06-laundry.webp": {
+    "src": "/images/optimised/06-laundry-1280-305ea49000ac.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-laundry-240-c21d01213fb4.webp 240w, /images/optimised/06-laundry-640-f30d0d8e88e8.webp 640w, /images/optimised/06-laundry-1280-305ea49000ac.webp 1280w, /images/optimised/06-laundry-1400-af6e71f17e31.webp 1400w"
+  },
+  "/images/rentals/lambeth-circle-wellard/07-outdoor.webp": {
+    "src": "/images/optimised/07-outdoor-1280-67c2b601f273.webp",
+    "width": 1400,
+    "height": 933,
+    "srcSet": "/images/optimised/07-outdoor-240-eae1815efe8b.webp 240w, /images/optimised/07-outdoor-640-81a93687ebef.webp 640w, /images/optimised/07-outdoor-1280-67c2b601f273.webp 1280w, /images/optimised/07-outdoor-1400-6bb635021439.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-648ea82bc619.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-d5823c1f3289.webp 240w, /images/optimised/01-kitchen-640-84e1c847b70a.webp 640w, /images/optimised/01-kitchen-1280-648ea82bc619.webp 1280w, /images/optimised/01-kitchen-1400-ad81ffa0c12d.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-c443459531f0.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-living-240-4f9a1889b1ce.webp 240w, /images/optimised/02-living-640-520fc6cb33a8.webp 640w, /images/optimised/02-living-1280-c443459531f0.webp 1280w, /images/optimised/02-living-1400-aedb6e96ff7c.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/03-bedroom.webp": {
+    "src": "/images/optimised/03-bedroom-1280-1742348a54d9.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-bedroom-240-c87301c263c1.webp 240w, /images/optimised/03-bedroom-640-82811176b3cf.webp 640w, /images/optimised/03-bedroom-1280-1742348a54d9.webp 1280w, /images/optimised/03-bedroom-1400-b06c2c5a7f62.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/04-bedroom.webp": {
+    "src": "/images/optimised/04-bedroom-1280-7c73bf0c5576.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bedroom-240-cbbc4601dd44.webp 240w, /images/optimised/04-bedroom-640-8fa040c07a98.webp 640w, /images/optimised/04-bedroom-1280-7c73bf0c5576.webp 1280w, /images/optimised/04-bedroom-1400-799dff95ec1f.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-d454739deef0.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bathroom-240-a0cbd58965f9.webp 240w, /images/optimised/05-bathroom-640-c0e2d4b05af6.webp 640w, /images/optimised/05-bathroom-1280-d454739deef0.webp 1280w, /images/optimised/05-bathroom-1400-7f23ad9dfb93.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/06-laundry.webp": {
+    "src": "/images/optimised/06-laundry-1280-308a163b5262.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-laundry-240-883647a6019b.webp 240w, /images/optimised/06-laundry-640-de3cc4efa86e.webp 640w, /images/optimised/06-laundry-1280-308a163b5262.webp 1280w, /images/optimised/06-laundry-1400-5f8b9b194a3b.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/07-backyard.webp": {
+    "src": "/images/optimised/07-backyard-1280-ebbd037c4984.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/07-backyard-240-1347691cf628.webp 240w, /images/optimised/07-backyard-640-14b3e8dc00ae.webp 640w, /images/optimised/07-backyard-1280-ebbd037c4984.webp 1280w, /images/optimised/07-backyard-1400-c4a9ac4bf787.webp 1400w"
+  },
+  "/images/rentals/newsham-grove-lakelands/08-front.webp": {
+    "src": "/images/optimised/08-front-1280-8cd9df2de78b.webp",
+    "width": 1400,
+    "height": 933,
+    "srcSet": "/images/optimised/08-front-240-b120c2176e30.webp 240w, /images/optimised/08-front-640-9fa4140f706b.webp 640w, /images/optimised/08-front-1280-8cd9df2de78b.webp 1280w, /images/optimised/08-front-1400-096b77b8b19a.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-36dc0835a3d1.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-538d755f3b30.webp 240w, /images/optimised/01-kitchen-640-0cecc44645c3.webp 640w, /images/optimised/01-kitchen-1280-36dc0835a3d1.webp 1280w, /images/optimised/01-kitchen-1400-e713f43c3765.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-ff75c699f86f.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-living-240-8c651270ed0c.webp 240w, /images/optimised/02-living-640-c43d13594433.webp 640w, /images/optimised/02-living-1280-ff75c699f86f.webp 1280w, /images/optimised/02-living-1400-b40c2e300df0.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/03-dining.webp": {
+    "src": "/images/optimised/03-dining-1280-fdd96206e306.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-dining-240-9d54866ee5d4.webp 240w, /images/optimised/03-dining-640-16a8b160cd83.webp 640w, /images/optimised/03-dining-1280-fdd96206e306.webp 1280w, /images/optimised/03-dining-1400-a610ff6d3859.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/04-bedroom.webp": {
+    "src": "/images/optimised/04-bedroom-1280-1182f1362cb1.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bedroom-240-0894f4ba867d.webp 240w, /images/optimised/04-bedroom-640-bccb98501a22.webp 640w, /images/optimised/04-bedroom-1280-1182f1362cb1.webp 1280w, /images/optimised/04-bedroom-1400-26b7cfaff637.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/05-bedroom.webp": {
+    "src": "/images/optimised/05-bedroom-1280-82155dd9a533.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bedroom-240-cdb2bbe95743.webp 240w, /images/optimised/05-bedroom-640-18df7f59157d.webp 640w, /images/optimised/05-bedroom-1280-82155dd9a533.webp 1280w, /images/optimised/05-bedroom-1400-b649efbaa148.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/06-bedroom.webp": {
+    "src": "/images/optimised/06-bedroom-1280-4a873e97ba65.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-bedroom-240-87142d4f4448.webp 240w, /images/optimised/06-bedroom-640-871e26fab88b.webp 640w, /images/optimised/06-bedroom-1280-4a873e97ba65.webp 1280w, /images/optimised/06-bedroom-1400-4ba5f5198ce3.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/07-bedroom.webp": {
+    "src": "/images/optimised/07-bedroom-1280-edb47709b75c.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/07-bedroom-240-902a6927c2d0.webp 240w, /images/optimised/07-bedroom-640-f7173410e5c2.webp 640w, /images/optimised/07-bedroom-1280-edb47709b75c.webp 1280w, /images/optimised/07-bedroom-1400-0aa03879ae16.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/08-bedroom.webp": {
+    "src": "/images/optimised/08-bedroom-1280-b31321e7149e.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/08-bedroom-240-28524e45b076.webp 240w, /images/optimised/08-bedroom-640-2e49b94c5a24.webp 640w, /images/optimised/08-bedroom-1280-b31321e7149e.webp 1280w, /images/optimised/08-bedroom-1400-4fc1cc152d9d.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/09-bathroom.webp": {
+    "src": "/images/optimised/09-bathroom-1280-0d4fc82c4609.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/09-bathroom-240-efa7c801ee34.webp 240w, /images/optimised/09-bathroom-640-5eb4e386039c.webp 640w, /images/optimised/09-bathroom-1280-0d4fc82c4609.webp 1280w, /images/optimised/09-bathroom-1400-453b62c37998.webp 1400w"
+  },
+  "/images/rentals/santa-clara-clarkson/10-outdoor.webp": {
+    "src": "/images/optimised/10-outdoor-1280-0958b5302902.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/10-outdoor-240-cabef39af6ab.webp 240w, /images/optimised/10-outdoor-640-a92fc393325b.webp 640w, /images/optimised/10-outdoor-1280-0958b5302902.webp 1280w, /images/optimised/10-outdoor-1400-4f525b468b5e.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-164d913bd6fc.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-da288e2ad6fa.webp 240w, /images/optimised/01-kitchen-640-de9eaa8e75a9.webp 640w, /images/optimised/01-kitchen-1280-164d913bd6fc.webp 1280w, /images/optimised/01-kitchen-1400-dce1c5cc0994.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/02-living-dining.webp": {
+    "src": "/images/optimised/02-living-dining-1280-e36791bedb2d.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-living-dining-240-8944006bc467.webp 240w, /images/optimised/02-living-dining-640-a4766c3ad356.webp 640w, /images/optimised/02-living-dining-1280-e36791bedb2d.webp 1280w, /images/optimised/02-living-dining-1400-3f280dc67f42.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/03-bedroom.webp": {
+    "src": "/images/optimised/03-bedroom-1280-a736b303b4b8.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/03-bedroom-240-d9e50be93eab.webp 240w, /images/optimised/03-bedroom-640-5deeed9c9e92.webp 640w, /images/optimised/03-bedroom-1280-a736b303b4b8.webp 1280w, /images/optimised/03-bedroom-1400-1e54e86916a9.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/04-bedroom.webp": {
+    "src": "/images/optimised/04-bedroom-1280-1579cc3e92f7.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/04-bedroom-240-f0140cf7747a.webp 240w, /images/optimised/04-bedroom-640-a2d1380afa18.webp 640w, /images/optimised/04-bedroom-1280-1579cc3e92f7.webp 1280w, /images/optimised/04-bedroom-1400-55e9c669d710.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-0ff5ff88ab03.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/05-bathroom-240-6accc428d191.webp 240w, /images/optimised/05-bathroom-640-40360a9ec25c.webp 640w, /images/optimised/05-bathroom-1280-0ff5ff88ab03.webp 1280w, /images/optimised/05-bathroom-1400-09f449cfe21d.webp 1400w"
+  },
+  "/images/rentals/santorini-promenade-alkimos/06-local-area.webp": {
+    "src": "/images/optimised/06-local-area-1280-6a8b42799706.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/06-local-area-240-2d5e0137fbb9.webp 240w, /images/optimised/06-local-area-640-7b105a71f703.webp 640w, /images/optimised/06-local-area-1280-6a8b42799706.webp 1280w, /images/optimised/06-local-area-1400-e51da1a6ef6b.webp 1400w"
+  },
+  "/images/rentals/tower-avenue-frankston/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-39df5f3f415b.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/01-kitchen-240-e1b20a7be3f1.webp 240w, /images/optimised/01-kitchen-640-5557d4403c70.webp 640w, /images/optimised/01-kitchen-1280-39df5f3f415b.webp 1280w, /images/optimised/01-kitchen-1400-bac3834b8432.webp 1400w"
+  },
+  "/images/rentals/tower-avenue-frankston/02-bathroom.webp": {
+    "src": "/images/optimised/02-bathroom-1280-45b848e48ce6.webp",
+    "width": 1400,
+    "height": 1157,
+    "srcSet": "/images/optimised/02-bathroom-240-e22c88f099a6.webp 240w, /images/optimised/02-bathroom-640-4c376d91543d.webp 640w, /images/optimised/02-bathroom-1280-45b848e48ce6.webp 1280w, /images/optimised/02-bathroom-1400-d4d72a885928.webp 1400w"
+  },
+  "/images/section-about.jpg": {
+    "src": "/images/optimised/section-about-1280-93687370db74.webp",
+    "width": 1920,
+    "height": 1281,
+    "srcSet": "/images/optimised/section-about-240-47d6eec0cd24.webp 240w, /images/optimised/section-about-640-baae40af1394.webp 640w, /images/optimised/section-about-1280-93687370db74.webp 1280w, /images/optimised/section-about-1920-57d5c705a026.webp 1920w"
+  },
+  "/images/section-buyers.jpg": {
+    "src": "/images/optimised/section-buyers-1280-15c917548899.webp",
+    "width": 1920,
+    "height": 1080,
+    "srcSet": "/images/optimised/section-buyers-240-3749106ea296.webp 240w, /images/optimised/section-buyers-640-d4e25f9f8d28.webp 640w, /images/optimised/section-buyers-1280-15c917548899.webp 1280w, /images/optimised/section-buyers-1920-15e0670a921e.webp 1920w"
+  }
+}

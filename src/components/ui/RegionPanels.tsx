@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage'
 import { site } from '../../data/site'
 
 type Region = {
@@ -37,7 +38,7 @@ export default function RegionPanels() {
       {regions.map((region) => (
         <article key={region.code} className="region-panel">
           <div className="region-panel-bg" aria-hidden="true">
-            <img src={region.image} alt="" loading="lazy" />
+            <ResponsiveImage src={region.image} alt="" loading="lazy" />
           </div>
           <span className="region-panel-watermark" aria-hidden="true">{region.code}</span>
           <span className="region-panel-rail" aria-hidden="true" />
