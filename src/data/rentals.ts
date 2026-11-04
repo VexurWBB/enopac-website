@@ -5,6 +5,7 @@ export type RentalProperty = {
   state: 'WA' | 'VIC'
   published: boolean
   photos?: RentalPhoto[]
+  coverPhoto?: RentalPhoto
   applicationUrl?: string
 }
 
@@ -33,8 +34,8 @@ function gallery(slug: string, street: string, files: string[]): RentalPhoto[] {
   })
 }
 
-// Add Matt's Google Form URL here when supplied. A property can override it below.
-export const rentalApplicationUrl: string = ''
+// Shared application form. A property can override it below.
+export const rentalApplicationUrl: string = 'https://app.vexur.com.au/forms/enopac-room-application-3122522c'
 
 // Eleven slots: ten supplied locations and one unpublished slot awaiting details.
 // Photos and availability must be confirmed before advertising individual rooms.
@@ -44,6 +45,7 @@ export const rentalProperties: RentalProperty[] = [
   { slug: 'bleiberg-way-alkimos', street: 'Bleiberg Way', suburb: 'Alkimos', state: 'WA', published: true,
     photos: gallery('bleiberg-way-alkimos', 'Bleiberg Way', ['01-kitchen.webp', '02-bedroom.webp', '03-bedroom.webp', '04-bathroom.webp', '05-bathroom.webp', '06-laundry.webp', '07-local-area.webp']) },
   { slug: 'santorini-promenade-alkimos', street: 'Santorini Promenade', suburb: 'Alkimos', state: 'WA', published: true,
+    coverPhoto: { src: '/images/rentals/santorini-promenade-alkimos/06-local-area.webp', alt: 'Coastal cafe and gardens near Santorini Promenade, Alkimos' },
     photos: gallery('santorini-promenade-alkimos', 'Santorini Promenade', ['01-kitchen.webp', '02-living-dining.webp', '03-bedroom.webp', '04-bedroom.webp', '05-bathroom.webp', '06-local-area.webp']) },
   { slug: 'pipon-way-eglinton', street: 'Pipon Way', suburb: 'Eglinton', state: 'WA', published: true },
   { slug: 'santa-clara-clarkson', street: 'Santa Clara', suburb: 'Clarkson', state: 'WA', published: true,
@@ -54,7 +56,8 @@ export const rentalProperties: RentalProperty[] = [
     photos: gallery('lambeth-circle-wellard', 'Lambeth Circle', ['01-kitchen.webp', '02-kitchen.webp', '03-living.webp', '04-bedroom.webp', '05-bathroom.webp', '06-laundry.webp', '07-outdoor.webp']) },
   { slug: 'newsham-grove-lakelands', street: 'Newsham Grove', suburb: 'Lakelands', state: 'WA', published: true,
     photos: gallery('newsham-grove-lakelands', 'Newsham Grove', ['01-kitchen.webp', '02-living.webp', '03-bedroom.webp', '04-bedroom.webp', '05-bathroom.webp', '06-laundry.webp', '07-backyard.webp', '08-front.webp']) },
-  { slug: 'gibson-street-mandurah', street: 'Gibson Street', suburb: 'Mandurah', state: 'WA', published: true },
+  { slug: 'gibson-street-mandurah', street: 'Gibson Street', suburb: 'Mandurah', state: 'WA', published: true,
+    photos: gallery('gibson-street-mandurah', 'Gibson Street', ['01-kitchen.webp', '02-living.webp', '03-living-dining.webp', '04-outdoor.webp']) },
   { slug: 'tower-avenue-frankston', street: 'Tower Avenue', suburb: 'Frankston', state: 'VIC', published: true,
     photos: gallery('tower-avenue-frankston', 'Tower Avenue', ['01-kitchen.webp', '02-bathroom.webp']) },
   { slug: 'property-11', street: '', suburb: '', state: 'WA', published: false },

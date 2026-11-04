@@ -56,7 +56,7 @@ export default function RentalDetailPage() {
             <h2 className="accordion-title mt-4">Interested in a room?</h2>
             <p className="section-subtitle">Contact our team for current availability, rent and room details at this property.</p>
             {applicationUrl ? <>
-              <p className="section-subtitle">Complete our application on Google Forms and include {property.street}, {property.suburb} as your preferred property.</p>
+              <p className="section-subtitle">Complete our application and include {property.street}, {property.suburb} as your preferred property.</p>
               <div className="mt-6"><Button href={applicationUrl}>Apply for a room &rarr;</Button></div>
             </> : <>
               <p className="section-subtitle">Online applications are coming soon. You can contact our team in the meantime.</p>

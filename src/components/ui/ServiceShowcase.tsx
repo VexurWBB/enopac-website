@@ -42,7 +42,6 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
                 <span className="service-showcase-rail-glow" aria-hidden="true" />
 
                 <div className="service-showcase-meta">
-                  {featured && <span className="service-showcase-badge">Most Popular</span>}
                   <span className="service-showcase-fee">{service.fee}</span>
                 </div>
 
@@ -52,7 +51,7 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
                 <div className="service-showcase-features">
                   <p className="service-showcase-features-label">What&apos;s included</p>
                   <ul>
-                    {service.features.slice(0, 6).map((feature) => (
+                    {service.features.slice(0, service.slug === 'development' ? 7 : 6).map((feature) => (
                       <li key={feature}>{feature}</li>
                     ))}
                   </ul>

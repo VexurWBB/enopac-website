@@ -8,7 +8,6 @@ import CheckList from '../components/ui/CheckList'
 import FeatureAccordion from '../components/ui/FeatureAccordion'
 import RegionPanels from '../components/ui/RegionPanels'
 import Reveal from '../components/ui/Reveal'
-import { site } from '../data/site'
 import { heroImages, sectionImages } from '../data/heroImages'
 
 const whyFeatures = [
@@ -16,7 +15,7 @@ const whyFeatures = [
     number: '01',
     title: '8-Figure Portfolio Experience',
     summary: 'Deep expertise across property purchasing, management, and development — backed by real portfolio results.',
-    details: 'Our directors have an eight-figure personal property portfolio. Their first-hand experience with complex trust structures helps them understand how a purchase fits a broader investment plan.',
+    details: 'Our directors have an eight-figure personal property portfolio. Their first-hand experience with complex trust structures helps them understand how a purchase fits a broader investment plan and build a meaningful portfolio that will suit your specific goals.',
     bullets: [
       'Over seven years of active hands-on investing across WA and VIC',
       'First-hand experience with complex trust structures in their own portfolio',
@@ -76,7 +75,7 @@ export default function AboutPage() {
         actions={
           <>
             <BookingButton />
-            <Button to="/contact" variant="outline">Meet our team</Button>
+            <Button to="/contact" variant="outline">Contact Our Team</Button>
           </>
         }
       />
@@ -87,12 +86,11 @@ export default function AboutPage() {
             <EditorialSplit
               reverse
               eyebrow="Meet our team"
-              badge={`WA Licence ${site.licence}`}
-              title="A property partner who thinks beyond the purchase."
-              subtitle="Our directors have an eight-figure personal portfolio and over seven years of active investing. Their experience with complex trust structures in their own portfolio helps us consider the right property and structure for your goals."
+              title="A property partner who thinks outside the box."
+              subtitle="Our directors have an eight-figure personal portfolio and over seven years of active investing. Their experience with complex trust structures in their own portfolio helps them consider the right property and structure for your goals."
               image={sectionImages.portfolio}
             >
-              <CheckList items={['Off-market access', 'Portfolio strategy guidance', 'Expert negotiation', 'WA & VIC coverage']} />
+              <CheckList items={['Proven track record', 'Portfolio strategy guidance', 'Expert negotiation', 'WA & VIC coverage', 'Industry referrals to build your investment team with proven professionals']} />
               <div className="hero-actions">
                 <BookingButton />
               </div>

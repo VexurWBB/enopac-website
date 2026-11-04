@@ -1,3 +1,5 @@
+import { site } from '../../data/site'
+
 type Region = {
   code: string
   name: string
@@ -11,14 +13,14 @@ const regions: Region[] = [
     code: 'WA',
     name: 'Western Australia',
     tagline: 'Support across Western Australia',
-    highlight: 'Strong rental demand across metro and coastal markets',
+    highlight: `Real Estate Licence ${site.licences[0].number}`,
     image: '/images/region-wa.jpg',
   },
   {
     code: 'VIC',
     name: 'Victoria',
     tagline: 'Support across Victoria',
-    highlight: 'Diverse stock from inner-city to regional yield plays',
+    highlight: `Real Estate Licence ${site.licences[1].number}`,
     image: '/images/region-vic.jpg',
   },
 ]

@@ -84,7 +84,7 @@ export default function ContactInfoPanel() {
             <span>{site.cta}</span>
           </BookingButton>
           <p className="contact-info-callout-note">
-            WA Licence {site.licence} · Our team
+            {site.licences.map(({ state, number }) => `${state} Licence ${number}`).join(' · ')}
           </p>
         </div>
 

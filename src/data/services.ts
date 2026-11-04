@@ -91,6 +91,7 @@ export const services: Service[] = [
       'Budget and timeline management',
       'Investor syndicate structuring',
       'Exit strategy and sales planning',
+      'Explore alternate build methodologies',
       'Risk assessment and mitigation',
     ],
     benefits: [

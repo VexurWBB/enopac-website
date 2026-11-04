@@ -5,7 +5,7 @@ import Button from '../components/ui/Button'
 import ArrowIcon from '../components/ui/ArrowIcon'
 import Reveal from '../components/ui/Reveal'
 import { heroImages } from '../data/heroImages'
-import { listedRentals } from '../data/rentals'
+import { listedRentals, rentalApplicationUrl } from '../data/rentals'
 import './rentals.css'
 
 export default function RentalsPage() {
@@ -18,7 +18,7 @@ export default function RentalsPage() {
         description="Explore our rental locations across Western Australia and Victoria. Contact our team for current room availability."
         image={hero.src}
         imageAlt={hero.alt}
-        actions={<Button href="#properties">Explore properties &rarr;</Button>}
+        actions={<><Button href="#properties">Explore properties &rarr;</Button><Button href={rentalApplicationUrl} variant="outline">Apply for a room</Button></>}
       />
       <section id="properties" className="section-padding section-surface bg-dark rentals-section">
         <div className="section-container">
@@ -31,7 +31,7 @@ export default function RentalsPage() {
                   <Reveal key={property.slug}>
                     <Link className="card rental-card" to={`/rooms-for-rent/${property.slug}`} aria-label={`View ${property.street}, ${property.suburb}`}>
                       <div className="rental-photo">
-                        {property.photos?.length ? <><img src={property.photos[0].src} alt={property.photos[0].alt} loading="lazy" /><span className="rental-photo-count">{property.photos.length} photos</span></> :<><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
+                        {property.photos?.length ? <><img src={(property.coverPhoto ?? property.photos[0]).src} alt={(property.coverPhoto ?? property.photos[0]).alt} loading="lazy" /><span className="rental-photo-count">{property.photos.length} photos</span></> :<><span className="rental-photo-code" aria-hidden="true">{property.state}</span><span className="eyebrow">Photos coming soon</span></>}
                       </div>
                       <div className="rental-card-content">
                         <p className="eyebrow">{property.suburb} · {property.state}</p>

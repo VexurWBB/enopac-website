@@ -1,4 +1,4 @@
-/** Each image used exactly once sitewide. */
+/** Page imagery: supplied WA property photos and licensed Australian stock. */
 
 export const heroImages = {
   home: {
@@ -6,8 +6,8 @@ export const heroImages = {
     alt: 'Retro urban night scene — Enopac Property Group',
   },
   about: {
-    src: '/images/hero-about.jpg',
-    alt: 'Yellow residential house exterior',
+    src: '/images/rentals/newsham-grove-lakelands/08-front.webp',
+    alt: 'Contemporary home in Lakelands, Western Australia',
   },
   services: {
     src: '/images/hero-services.jpg',
@@ -26,12 +26,12 @@ export const heroImages = {
     alt: 'Well-maintained rental property exterior',
   },
   'buyers-agency': {
-    src: '/images/hero-buyers-agency.jpg',
-    alt: 'Residential property exterior',
+    src: '/images/rentals/newsham-grove-lakelands/08-front.webp',
+    alt: 'Modern single-storey home in Lakelands, Western Australia',
   },
   development: {
-    src: '/images/hero-development.jpg',
-    alt: 'Architect reviewing development plans on site',
+    src: '/images/development-timber-vic.jpg',
+    alt: 'Timber framing and roof trusses at a new home in Clyde North, Victoria',
   },
 } as const
 
@@ -45,8 +45,8 @@ export const sectionImages = {
     alt: 'Open-plan home showcasing quality finishes',
   },
   portfolio: {
-    src: '/images/section-portfolio.jpg',
-    alt: 'Historic brick building exterior',
+    src: '/images/rentals/haslam-street-brabham/07-front.webp',
+    alt: 'Residential property in Brabham, Western Australia',
   },
 } as const
 

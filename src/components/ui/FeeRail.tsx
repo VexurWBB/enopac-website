@@ -17,7 +17,6 @@ export default function FeeRail({ services }: { services: Service[] }) {
           className={`fee-card${index === 1 ? ' fee-card--featured' : ''}`}
         >
           <span className="fee-card-rail" aria-hidden="true" />
-          {index === 1 && <span className="fee-card-badge">Most Popular</span>}
           <span className="fee-card-watermark" aria-hidden="true">{service.abbr}</span>
 
           <div className="fee-card-top">
