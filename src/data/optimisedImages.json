@@ -395,64 +395,34 @@
     "height": 1080,
     "srcSet": "/images/optimised/section-buyers-240-3749106ea296.webp 240w, /images/optimised/section-buyers-640-d4e25f9f8d28.webp 640w, /images/optimised/section-buyers-1280-15c917548899.webp 1280w, /images/optimised/section-buyers-1920-15e0670a921e.webp 1920w"
   },
-  "/images/rentals/pipon-way-eglinton/01-kitchen.webp": {
-    "src": "/images/optimised/01-kitchen-999-979caecfda26.webp",
-    "width": 999,
-    "height": 819,
-    "srcSet": "/images/optimised/01-kitchen-240-15bdbd76c3c4.webp 240w, /images/optimised/01-kitchen-640-2c9c9fe24304.webp 640w, /images/optimised/01-kitchen-999-979caecfda26.webp 999w"
+  "/images/rentals/pipon-way-eglinton/2026-11-06/01-kitchen.webp": {
+    "src": "/images/optimised/01-kitchen-1280-1ccdbf851e69.webp",
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/optimised/01-kitchen-240-b095169a722f.webp 240w, /images/optimised/01-kitchen-640-c4ea767a3069.webp 640w, /images/optimised/01-kitchen-1280-1ccdbf851e69.webp 1280w, /images/optimised/01-kitchen-1536-fb27c9a5421a.webp 1536w"
   },
-  "/images/rentals/pipon-way-eglinton/02-living.webp": {
-    "src": "/images/optimised/02-living-997-b7fcbfc73d3f.webp",
-    "width": 997,
-    "height": 821,
-    "srcSet": "/images/optimised/02-living-240-453beb9d8146.webp 240w, /images/optimised/02-living-640-38b6dbee38a0.webp 640w, /images/optimised/02-living-997-b7fcbfc73d3f.webp 997w"
+  "/images/rentals/pipon-way-eglinton/2026-11-06/02-living.webp": {
+    "src": "/images/optimised/02-living-1280-9a51a683c45b.webp",
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/optimised/02-living-240-1e249bff2e9f.webp 240w, /images/optimised/02-living-640-95be1081c93f.webp 640w, /images/optimised/02-living-1280-9a51a683c45b.webp 1280w, /images/optimised/02-living-1536-721bfd41df0d.webp 1536w"
   },
-  "/images/rentals/pipon-way-eglinton/03-living-dining.webp": {
-    "src": "/images/optimised/03-living-dining-996-aacc67cb644a.webp",
-    "width": 996,
-    "height": 821,
-    "srcSet": "/images/optimised/03-living-dining-240-860a76d62302.webp 240w, /images/optimised/03-living-dining-640-53200c8b20af.webp 640w, /images/optimised/03-living-dining-996-aacc67cb644a.webp 996w"
+  "/images/rentals/pipon-way-eglinton/2026-11-06/03-living-dining.webp": {
+    "src": "/images/optimised/03-living-dining-1280-4d9ca1fd2f2f.webp",
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/optimised/03-living-dining-240-c8c0cc885851.webp 240w, /images/optimised/03-living-dining-640-fe1b11e95879.webp 640w, /images/optimised/03-living-dining-1280-4d9ca1fd2f2f.webp 1280w, /images/optimised/03-living-dining-1536-400ef59bb28a.webp 1536w"
   },
-  "/images/rentals/pipon-way-eglinton/04-bedroom.webp": {
-    "src": "/images/optimised/04-bedroom-1000-f23af520dedd.webp",
-    "width": 1000,
-    "height": 818,
-    "srcSet": "/images/optimised/04-bedroom-240-914554203158.webp 240w, /images/optimised/04-bedroom-640-a0cfda823eaf.webp 640w, /images/optimised/04-bedroom-1000-f23af520dedd.webp 1000w"
+  "/images/rentals/pipon-way-eglinton/2026-11-06/04-bedroom.webp": {
+    "src": "/images/optimised/04-bedroom-1280-898c03d8d8e8.webp",
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/optimised/04-bedroom-240-38ae3e32d8a8.webp 240w, /images/optimised/04-bedroom-640-0b2efbcf0abf.webp 640w, /images/optimised/04-bedroom-1280-898c03d8d8e8.webp 1280w, /images/optimised/04-bedroom-1536-650a7f23fdea.webp 1536w"
   },
-  "/images/rentals/pipon-way-eglinton/05-bedroom.webp": {
-    "src": "/images/optimised/05-bedroom-998-350e259673cf.webp",
-    "width": 998,
-    "height": 823,
-    "srcSet": "/images/optimised/05-bedroom-240-292756f2f212.webp 240w, /images/optimised/05-bedroom-640-cf898e94c5b5.webp 640w, /images/optimised/05-bedroom-998-350e259673cf.webp 998w"
-  },
-  "/images/rentals/pipon-way-eglinton/06-bathroom.webp": {
-    "src": "/images/optimised/06-bathroom-997-628b4af9df9c.webp",
-    "width": 997,
-    "height": 818,
-    "srcSet": "/images/optimised/06-bathroom-240-10158d53db11.webp 240w, /images/optimised/06-bathroom-640-4ad97a35c267.webp 640w, /images/optimised/06-bathroom-997-628b4af9df9c.webp 997w"
-  },
-  "/images/rentals/pipon-way-eglinton/07-bathroom.webp": {
-    "src": "/images/optimised/07-bathroom-999-11787017ae71.webp",
-    "width": 999,
-    "height": 823,
-    "srcSet": "/images/optimised/07-bathroom-240-d6c15e81e024.webp 240w, /images/optimised/07-bathroom-640-6cf431f1e875.webp 640w, /images/optimised/07-bathroom-999-11787017ae71.webp 999w"
-  },
-  "/images/rentals/pipon-way-eglinton/08-laundry.webp": {
-    "src": "/images/optimised/08-laundry-998-340a60bf2594.webp",
-    "width": 998,
-    "height": 826,
-    "srcSet": "/images/optimised/08-laundry-240-83b4523aab2c.webp 240w, /images/optimised/08-laundry-640-38d749eff32d.webp 640w, /images/optimised/08-laundry-998-340a60bf2594.webp 998w"
-  },
-  "/images/rentals/pipon-way-eglinton/09-storage.webp": {
-    "src": "/images/optimised/09-storage-1000-dd98c3fb9515.webp",
-    "width": 1000,
-    "height": 824,
-    "srcSet": "/images/optimised/09-storage-240-8ecd226e3cc9.webp 240w, /images/optimised/09-storage-640-bf9468bc6aa1.webp 640w, /images/optimised/09-storage-1000-dd98c3fb9515.webp 1000w"
-  },
-  "/images/rentals/pipon-way-eglinton/10-front.webp": {
-    "src": "/images/optimised/10-front-998-b4acf750d9e8.webp",
-    "width": 998,
-    "height": 823,
-    "srcSet": "/images/optimised/10-front-240-1920e2400126.webp 240w, /images/optimised/10-front-640-d004e950e0b9.webp 640w, /images/optimised/10-front-998-b4acf750d9e8.webp 998w"
+  "/images/rentals/pipon-way-eglinton/2026-11-06/05-bathroom.webp": {
+    "src": "/images/optimised/05-bathroom-1280-7601d9d97f7c.webp",
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/optimised/05-bathroom-240-71a057f7cb6d.webp 240w, /images/optimised/05-bathroom-640-2c9db5174241.webp 640w, /images/optimised/05-bathroom-1280-7601d9d97f7c.webp 1280w, /images/optimised/05-bathroom-1536-41d3e8ddc638.webp 1536w"
   }
 }

@@ -49,7 +49,7 @@ export const rentalProperties: RentalProperty[] = [
     coverPhoto: { src: '/images/rentals/santorini-promenade-alkimos/06-local-area.webp', alt: 'Coastal cafe and gardens near Santorini Promenade, Alkimos' },
     photos: gallery('santorini-promenade-alkimos', 'Santorini Promenade', ['01-kitchen.webp', '02-living-dining.webp', '03-bedroom.webp', '04-bedroom.webp', '05-bathroom.webp', '06-local-area.webp']) },
   { slug: 'pipon-way-eglinton', street: 'Pipon Way', suburb: 'Eglinton', state: 'WA', published: true,
-    photos: gallery('pipon-way-eglinton', 'Pipon Way', ['01-kitchen.webp', '02-living.webp', '03-living-dining.webp', '04-bedroom.webp', '05-bedroom.webp', '06-bathroom.webp', '07-bathroom.webp', '08-laundry.webp', '09-storage.webp', '10-front.webp']) },
+    photos: gallery('pipon-way-eglinton/2026-11-06', 'Pipon Way', ['01-kitchen.webp', '02-living.webp', '03-living-dining.webp', '04-bedroom.webp', '05-bathroom.webp']) },
   { slug: 'santa-clara-clarkson', street: 'Santa Clara', suburb: 'Clarkson', state: 'WA', published: true,
     photos: gallery('santa-clara-clarkson', 'Santa Clara', ['01-kitchen.webp', '02-living.webp', '03-dining.webp', '04-bedroom.webp', '05-bedroom.webp', '06-bedroom.webp', '07-bedroom.webp', '08-bedroom.webp', '09-bathroom.webp', '10-outdoor.webp']) },
   { slug: 'haslam-street-brabham', street: 'Haslam Street', suburb: 'Brabham', state: 'WA', published: true,
