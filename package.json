@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && tsc -b && npm run build:assets",
-    "build:assets": "node init && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/verify-dist.mjs",
+    "dev": "vite",
+    "build": "tsc -b && npm run build:assets",
+    "build:assets": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/verify-dist.mjs",
     "deploy:worker": "npm run build:assets && wrangler deploy",
     "preview:worker": "npm run build:assets && wrangler dev",
     "lint": "eslint .",
