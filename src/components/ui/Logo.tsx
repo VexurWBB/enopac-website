@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 type LogoProps = {
   className?: string
@@ -18,19 +18,17 @@ function LogoText({ className = '', size = 'sm' }: LogoProps) {
 }
 
 export default function Logo({ className = '', size = 'sm' }: LogoProps) {
-  const [useImage, setUseImage] = useState(false)
-
-  useEffect(() => {
-    const img = new Image()
-    img.onload = () => setUseImage(true)
-    img.onerror = () => setUseImage(false)
-    img.src = '/logo.png'
-  }, [])
+  const [useImage, setUseImage] = useState(true)
 
   if (useImage) {
     return (
       <img
-        src="/logo.png"
+        src="/logo-420.webp"
+        srcSet="/logo-160.webp 160w, /logo-240.webp 240w, /logo-420.webp 420w"
+        sizes={size === 'lg' ? '211px' : size === 'nav' ? '(min-width: 1024px) 80px, (min-width: 768px) 73px, 66px' : '(min-width: 1024px) 119px, (min-width: 768px) 106px, 93px'}
+        loading={size === 'sm' ? 'lazy' : 'eager'}
+        width={420}
+        height={255}
         alt="Enopac Property Group"
         className={`logo-img logo-img--${size}${className ? ` ${className}` : ''}`}
         decoding="async"

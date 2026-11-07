@@ -831,7 +831,7 @@
     {
       "id": "application_consent",
       "endpoint_key": "application_consent",
-      "label": "By submitting this form, I confirm that I consent to Enopac Property Group Pty Ltd contacting my references and to the collection and use of my information for the purpose of assessing my application. I understand that if unsuccessful, my information will be securely deleted and not retained.",
+      "label": "By submitting this form, I confirm that I consent to Enopac Property Group Pty Ltd contacting my references and to the collection and use of my information for the purpose of assessing my application. Please contact Enopac Property Group for information about retention, access and deletion of application records.",
       "type": "checkbox",
       "required": true,
       "placeholder": "Confirm"
