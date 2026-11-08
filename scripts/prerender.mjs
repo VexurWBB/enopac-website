@@ -9,6 +9,8 @@ const { render, seoRoutes, site } = ssr
 const template = readFileSync(join(dist, 'index.html'), 'utf8')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
 const abs = (path) => `${site.url}${path}`
+// The production domain is deferred; this existing preview hosts the image.
+const shareImage = 'https://enopac-website.ben-03a.workers.dev/social-preview.png'
 
 const business = {
   '@context': 'https://schema.org',
@@ -59,8 +61,14 @@ function page(route, { noindex = false } = {}) {
     `<meta property="og:title" content="${esc(route.title)}" />`,
     `<meta property="og:description" content="${esc(route.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
-    `<meta property="og:image" content="${site.url}/images/hero-home.jpg" />`,
+    `<meta property="og:image" content="${shareImage}" />`,
+    `<meta property="og:image:width" content="1200" />`,
+    `<meta property="og:image:height" content="630" />`,
+    `<meta property="og:image:type" content="image/png" />`,
+    `<meta property="og:image:alt" content="${esc(site.name)} logo" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:image" content="${shareImage}" />`,
+    `<meta name="twitter:image:alt" content="${esc(site.name)} logo" />`,
     schemaFor(route),
   ].join('')
   return template
