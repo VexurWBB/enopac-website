@@ -8,7 +8,7 @@ const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]
 assert.equal(new Set(urls).size, urls.length)
 for (const url of urls) {
   const parsed = new URL(url)
-  assert.equal(parsed.origin, 'https://enopacpg.com')
+  assert.equal(parsed.origin, 'https://www.enopacpropertygroup.com.au')
   const html = await readFile(path.join(root, parsed.pathname, 'index.html'), 'utf8')
   assert.ok(html.includes(`<link rel="canonical" href="${url}"`), url)
   assert.ok(html.includes(`<meta property="og:url" content="${url}"`), url)

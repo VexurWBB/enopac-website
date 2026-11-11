@@ -5,7 +5,7 @@ export const site = {
   phone: '(08) 6245 7931',
   phoneHref: 'tel:+61862457931',
   contact: 'Our team',
-  url: 'https://enopacpg.com',
+  url: 'https://www.enopacpropertygroup.com.au',
   licence: 'RA85608',
   // Both current on the WA and Victorian public registers, 2 Nov 2026.
   licences: [

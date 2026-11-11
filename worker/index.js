@@ -1,4 +1,4 @@
-const productionHosts = new Set(['enopacpg.com', 'www.enopacpg.com']);
+const productionHosts = new Set(['enopacpropertygroup.com.au', 'www.enopacpropertygroup.com.au', 'enopacpg.com', 'www.enopacpg.com']);
 
 function forwardedHostname(request) {
   return (request.headers.get('x-forwarded-host') || '').split(',')[0].trim().toLowerCase().replace(/:\d+$/, '');
